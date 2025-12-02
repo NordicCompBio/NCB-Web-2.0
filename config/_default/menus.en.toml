@@ -12,39 +12,42 @@ url = "/about"
 weight = 2
 
 [[main]]
-name = "Elements"
-url = "/elements"
+name = "Resources"
+url = "/resources"
 weight = 3
 
 [[main]]
 weight = 4
-name = "Pages"
+name = "Events"
 
 [[main]]
-parent = "Pages"
+parent = "Events"
+name = "NCB Week"
+url = "/ncb-week"
+
+[[main]]
+weight = 5
+name = "Team"
+
+[[main]]
+parent = "Team"
+name = "Core Members"
+url = "/core-members"
+
+[[main]]
+parent = "Team"
+name = "Advisors"
+url = "/advisors"
+
+[[main]]
 name = "Blog"
 url = "/blog"
+weight = 6
 
 [[main]]
-parent = "Pages"
 name = "Contact"
 url = "/contact"
-
-[[main]]
-parent = "Pages"
-name = "Authors"
-url = "/authors"
-
-[[main]]
-parent = "Pages"
-name = "Categories"
-url = "/categories"
-
-[[main]]
-parent = "Pages"
-name = "404 Page"
-url = "/404"
-
+weight = 7
 
 # footer menu
 [[footer]]

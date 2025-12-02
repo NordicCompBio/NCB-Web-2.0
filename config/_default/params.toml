@@ -1,13 +1,13 @@
 #################### default parameters ############################
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
-favicon = "images/favicon.png"
+favicon = "images/ncb_logo.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
-logo = "images/logo.png"
-logo_darkmode = "images/logo-darkmode.png"
+logo = "images/ncb_logo.png"
+logo_darkmode = "images/ncb_logo.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "160px"
-logo_height = "32px"
+logo_width = "45px"
+logo_height = "45px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
@@ -38,8 +38,8 @@ preloader = "" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "get a quote"
-link = "contact"
+label = "Sign Up"
+link = "https://docs.google.com/forms/d/e/1FAIpQLSdlkCWgLYHruRqYUZRzkDOETeyZ2pWOc08fIGK0L01Cpd6L7Q/viewform?usp=send_form"
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search

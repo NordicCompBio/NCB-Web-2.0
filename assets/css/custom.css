@@ -1,1 +1,9 @@
 /* Add your own custom styles here */
+
+/* .header {
+  @apply bg-primary dark:bg-darkmode-body py-2;
+}
+
+.nav-link {
+  @apply text-darkmode-text-light hover:text-primary dark:text-darkmode-text-dark dark:hover:text-darkmode-primary block p-3 cursor-pointer font-semibold transition lg:px-2 lg:py-3;
+} */

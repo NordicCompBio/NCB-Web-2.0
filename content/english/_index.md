@@ -1,13 +1,13 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
-  image: "/images/banner.png"
+  title: "Nordic Computational Biology"
+  content: "A platform for all things computational biology in the Nordics. NCB is made up of life scientists for life scientists, computer scientists, and bioinformaticians"
+  image: "images/ncb_hero_bg.png" #/images/ncb_hero_banner.png, image only adds item at bottom
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
+    label: "Know More"
+    link: "/about"
 
 # Features
 features:
