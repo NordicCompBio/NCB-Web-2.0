@@ -22,6 +22,11 @@ name = "Events"
 
 [[main]]
 parent = "Events"
+name = "Hosted Events"
+url = "/events"
+
+[[main]]
+parent = "Events"
 name = "NCB Week"
 url = "/ncb-week"
 
@@ -38,11 +43,6 @@ url = "/core-members"
 parent = "Team"
 name = "Advisors"
 url = "/advisors"
-
-[[main]]
-name = "Blog"
-url = "/blog"
-weight = 6
 
 [[main]]
 name = "Contact"

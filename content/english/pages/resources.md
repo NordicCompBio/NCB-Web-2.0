@@ -8,245 +8,101 @@ description: "This is meta description"
 draft: false
 ---
 
-{{< toc >}}
-
-Here is an example of headings. You can use this heading by the following markdown rules. For example: use `#` for heading 1 and use `######` for heading 6.
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
-<hr>
-
-### Emphasis
-
-The emphasis, aka italics, with _asterisks_ or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or **underscores**.
-
-The combined emphasis with **asterisks and _underscores_**.
-
-Strike through uses two tildes. ~~Scratch this.~~
-
-<hr>
-
-### Button
-
-{{< button label="Button" link="/" style="solid" >}}
-
-<hr>
-
-### Link
-
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-URLs and URLs in angle brackets will automatically get turned into links.
-<http://www.example.com> or <http://www.example.com> and sometimes
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-<hr>
-
-### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-### Ordered List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
-<hr>
-
-### Unordered List
-
-- List item
-- List item
-- List item
-- List item
-- List item
-
-<hr>
-
-### Notice
-
-{{< notice "note" >}}
-This is a simple note.
-{{< /notice >}}
-
-{{< notice "quote" >}}
-This is a simple quote.
-{{< /notice >}}
-
-{{< notice "tip" >}}
-This is a simple tip.
-{{< /notice >}}
-
-{{< notice "info" >}}
-This is a simple info.
-{{< /notice >}}
-
-{{< notice "warning" >}}
-This is a simple warning.
-{{< /notice >}}
-
-<hr>
-
-### Tab
-
-{{< tabs >}}
-{{< tab "Tab 1" >}}
-
-#### Hey There, I am a tab
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-{{< /tab >}}
-
-{{< tab "Tab 2" >}}
-
-#### I wanna talk about the assassination attempt
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-{{< /tab >}}
-
-{{< tab "Tab 3" >}}
-
-#### We know you’re dealing in stolen ore
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-
-{{< /tab >}}
-{{< /tabs >}}
-
-<hr>
-
-### Accordions
-
-{{< accordion "Why should you need to do this?" >}}
-
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur
-
-{{< /accordion >}}
-
-{{< accordion "How can I adjust Horizontal centering" >}}
-
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur
-
-{{< /accordion >}}
-
-{{< accordion "Should you use Negative margin?" >}}
-
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-- Lorem ipsum dolor sit amet consectetur
-
-{{< /accordion >}}
-
-<hr>
-
-### Code and Syntax Highlighting
-
-This is an `Inline code` sample.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```c  { linenos=true }
-#include <stdio.h>
-
-int main(void)
-{
-    printf("hello, world\n");
-    return 0;
-}
-```
-
-```mermaid
-flowchart TD
-    A[Start] --> B{Is it?}
-    B -- Yes --> C[OK]
-    C --> D[Rethink]
-    D --> B
-    B -- No ----> E[End]
-```
-
-<hr>
-
-### Blockquote
-
-> Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once.
-
-<hr>
-
-### Tables
-
-| Tables        |      Are      |  Cool |
-| ------------- | :-----------: | ----: |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      |   centered    |   $12 |
-| zebra stripes |   are neat    |    $1 |
-
-<hr>
-
-### Image
-
-{{< image src="images/image-placeholder.png" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}
-
-<hr>
-
-### Gallery
-
-{{< gallery dir="images/gallery" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
-
-<hr>
-
-### Slider
-
-{{< slider dir="images/gallery" class="max-w-[600px] ml-0" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
-
-<hr>
-
-### Youtube video
-
-{{< youtube ResipmZmpDU >}}
-
-<hr>
-
-### Custom video
-
-{{< video src="https://www.w3schools.com/html/mov_bbb.mp4" width="100%" height="auto" autoplay="false" loop="false" muted="false" controls="true" class="rounded-lg" >}}
+## Nordic CompBio Resources 
+
+One of the aims of NCB is to provide a list of useful resources for people based in the Nordics and those who want to pursue education and career here. If you would like to list any educational resources here, you can contact us using the form on the homepage.
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 40px 0;">
+
+  <!-- Column 1 -->
+  <div style="flex: 0 0 48%; margin-bottom: 30px;">
+    <!-- Country 1 -->
+    <div style="margin-bottom: 20px;">
+      <div style="display: flex; align-items: center;">
+        <img src="/images/Flags/Finland flag.png" alt="Finland Flag" style="width: 100px; height: auto; margin-right: 10px;">
+        <strong style="font-size: 20px;">Finland</strong>
+      </div>
+      <br>
+      <ul style="margin: 8px 0 0 30px; padding: 0;">
+        <li><a href="https://www.helsinki.fi/en/degree-programmes/life-science-informatics-masters-programme" target="_blank">MSc LIFE SCIENCE INFORMATICS, UNIVERSITY OF HELSINKI</a></li>
+        <li><a href="https://www.helsinki.fi/en/degree-programmes/genetics-and-molecular-biosciences-masters-programme" target="_blank">MSc GENETICS AND MOLECULAR BIOSCIENCES, UNIVERSITY OF HELSINKI</a></li>
+        <li><a href="https://www.aalto.fi/en/study-options/life-science-technologies-master-of-science-technology" target="_blank">MSc LIFE SCIENCE TECHNOLOGIES, AALTO UNIVERSITY</a></li>
+        <li><a href="https://www.uef.fi/en/degree-programme/masters-degree-programme-in-toxicology" target="_blank">MSc TOXICOLOGY, UNIVERSITY OF EASTERN FINLAND</a></li>
+        <li><a href="https://www.uef.fi/en/degree-programme/masters-degree-programme-in-biomedicine" target="_blank">MSc BIOMEDICINE, UNIVERSITY OF EASTERN FINLAND</a></li>
+        <li><a href="https://www.utu.fi/en/study-at-utu/masters-degree-programme-in-biosciences-evolutionary-biology" target="_blank">MSc BIOSCIENCES: EVOLUTIONARY BIOLOGY, UNIVERSITY OF TURKU</a></li>
+        <li><a href="https://www.utu.fi/en/study-at-utu/masters-degree-programme-in-biomedical-sciences-drug-discovery-and-development" target="_blank">MSc BIOMEDICAL SCIENCES: DRUG DISCOVERY AND DEVELOPMENT, UNIVERSITY OF TURKU</a></li>
+        <li><a href="https://www.utu.fi/en/study-at-utu/masters-degree-programme-in-biosciences-molecular-systems-biology" target="_blank">MSc BIOSCIENCES: MOLECULAR SYSTEMS BIOLOGY, UNIVERSITY OF TURKU</a></li>
+        <li><a href="https://www.utu.fi/en/study-at-utu/masters-degree-programme-in-exact-sciences-chemistry-of-drug-development" target="_blank">MSc EXACT SCIENCES: CHEMISTRY OF DRUG DEVELOPMENT, UNIVERSITY OF TURKU</a></li>
+        <li><a href="https://www.oulu.fi/en/apply/masters-epidemiology-and-biomedical-data-science" target="_blank">MSc EPIDEMIOLOGY AND BIOMEDICAL DATA SCIENCE, UNIVERSITY OF OULU</a></li>
+        <li><a href="https://sites.utu.fi/microbiomesummerschool/" target="_blank">MICROBIOME SUMMER SCHOOL, UNIVERSITY OF TURKU</a></li>
+      </ul>
+      <br>
+    </div>
+    <!-- Country 2 -->
+    <div style="margin-bottom: 20px;">
+      <div style="display: flex; align-items: center;">
+        <img src="/assets/images/Flags/Flag_of_Norway.png" alt="Norway Flag" style="width: 100px; height: auto; margin-right: 10px;">
+        <strong style="font-size: 20px;">Norway</strong>
+      </div>
+      <ul style="margin: 8px 0 0 30px; padding: 0;">
+        <li><a href="https://www.uib.no/en/rg/bioinformatics/114033/bachelor" target="_blank">BSc BIOINFORMATICS, UNIVERSITY OF BERGEN</a></li>
+        <li><a href="https://www.uib.no/en/rg/bioinformatics/114034/master" target="_blank">MSc BIOINFORMATICS, UNIVERSITY OF BERGEN</a></li>
+        <li><a href="https://www.uio.no/english/studies/programmes/computational-science-master/programme-options/bioinformatics/index.html" target="_blank">MSc COMPUTATIONAL SCIENCE, UNIVERSITY OF OSLO</a></li>
+      </ul>
+    </div>
+    <br>
+    <!-- Country 3 -->
+    <div style="margin-bottom: 20px;">
+      <div style="display: flex; align-items: center;">
+        <img src="/assets/images/Flags/Denmark flag.png" alt="Denmark Flag" style="width: 100px; height: auto; margin-right: 10px;">
+        <strong style="font-size: 20px;">Denmark</strong>
+      </div>
+      <ul style="margin: 8px 0 0 30px; padding: 0;">
+        <li><a href="https://www.ku.dk/studies/masters/bioinformatics" target="_blank">MSc BIOINFORMATICS, UNIVERSITY OF COPENHAGEN</a></li>
+        <li><a href="https://www.dtu.dk/english/education/graduate/msc-programmes/bioinformatics" target="_blank">MSc BIOINFORMATICS & SYSTEMS BIOLOGY, DANMARKS TEKNISKE UNIVERSITET</a></li>
+      </ul>
+    </div>
+    <br>
+  </div>
+  <!-- Column 2 -->
+  <div style="flex: 0 0 48%; margin-bottom: 30px;">
+    <!-- Country 4 -->
+    <div style="margin-bottom: 20px;">
+      <div style="display: flex; align-items: center;">
+        <img src="/assets/images/Flags/Sweden flag.png" alt="Sweden Flag" style="width: 100px; height: auto; margin-right: 10px;">
+        <strong style="font-size: 20px;">Sweden</strong>
+      </div>
+      <ul style="margin: 8px 0 0 30px; padding: 0;">
+        <li><a href="https://www.his.se/en/molecular-bioinformatics-180/" target="_blank">BSc MOLECULAR BIOINFORMATICS, UNIVERSITY OF SKÖVDE</a></li>
+        <li><a href="https://www.his.se/en/education/bioscience/molecular-biodesign-molbg/" target="_blank">BSc MOLECULAR BIODESIGN, UNIVERSITY OF SKÖVDE</a></li>
+        <li><a href="https://www.lunduniversity.lu.se/lubas/i-uoh-lu-NABIF/18010" target="_blank">MSc BIOINFORMATICS, LUND UNIVERSITY </a></li>
+        <li><a href="https://www.lunduniversity.lu.se/lubas/i-uoh-lu-NATBE-TBBO/18180" target="_blank">MSc APPLIED COMPUTATIONAL SCIENCE-BIOLOGY, LUND UNIVERSITY </a></li>
+        <li><a href="https://www.gu.se/en/study-gothenburg/bioinformatics-and-functional-genomics-bio210" target="_blank">MSc BIOINFORMATICS AND FUNCTIONAL GENOMICS, UNIVERSITY OF GOTHENBURG</a></li>
+        <li><a href="https://www.uu.se/en/study/programme/masters-programme-bioinformatics-biology-background" target="_blank">MSc BIOINFORMATICS-BIOLOGY BACKGROUND, UPPSALA UNIVERSITY</a></li>
+        <li><a href="https://www.uu.se/en/study/programme/masters-programme-bioinformatics-computer-science-background" target="_blank">MSc BIOINFORMATICS-COMPUTER SCIENCE BACKGROUND, UPPSALA UNIVERSITY</a></li>
+        <li><a href="https://www.uu.se/en/study/programme/masters-programme-infection-biology" target="_blank">MSc INFECTION BIOLOGY, UPPSALA UNIVERSITY</a></li>
+        <li><a href="https://www.uu.se/en/study/programme/masters-programme-precision-medicine" target="_blank">MSc PRECISION MEDICINE, UPPSALA UNIVERSITY</a></li>
+        <li><a href="https://www.his.se/en/education/bioscience/bioinformatics-masters-programme-biima/" target="_blank">MSc BIOINFORMATICS, UNIVERSITY OF SKÖVDE</a></li>
+        <li><a href="https://www.his.se/en/biomarkers-120" target="_blank">MSc BIOMARKERS IN MOLECULAR MEDICINE, UNIVERSITY OF SKÖVDE</a></li>
+        <li><a href="https://www.his.se/en/systems-biology-bioinformatics-120" target="_blank">MSc SYSTEMS BIOLOGY WITH SPECIALIZATION IN BIOINFORMATICS, UNIVERSITY OF SKÖVDE</a></li>
+        <li><a href="https://www.his.se/en/molecular-biotechnology-120" target="_blank">MSc MOLECULAR BIOTECHNOLOGY, UNIVERSITY OF SKÖVDE</a></li>
+        <li><a href="https://www.his.se/en/infection-biology-120" target="_blank">MSc INFECTION BIOLOGY, UNIVERSITY OF SKÖVDE</a></li>
+        <li><a href="https://www.his.se/en/molecular-ecology-120" target="_blank">MSc MOLECULAR ECOLOGY, UNIVERSITY OF SKÖVDE</a></li>
+        <li><a href="https://utbildning.su.se/english/education/course-catalogue/nb/nbbko?eventcode=53000&semester=HT2024" target="_blank">MSc BIOCHEMISTRY WITH SPECIALIZATION IN PROTEIN CHEMISTRY, UNIVERSITY OF STOCKHOLM</a></li>
+        <li><a href="https://www.oru.se/english/study/master-students/masters-programmes/masters-programme-in-experimental-medicine/" target="_blank">MSc EXPERIMENTAL MEDICINE, UNIVERSITY OF ÖREBRO</a></li>
+      </ul>
+    </div>
+    <br>
+    <!-- Country 5 -->
+    <div style="margin-bottom: 20px;">
+      <div style="display: flex; align-items: center;">
+        <img src="/assets/images/Flags/Iceland.png" alt="Iceland Flag" style="width: 100px; height: auto; margin-right: 10px;">
+        <strong style="font-size: 20px;">Iceland</strong>
+      </div>
+      <ul style="margin: 8px 0 0 30px; padding: 0;">
+        <li><a href="https://english.hi.is/bioinformatics/ms" target="_blank">MSc BIOINFORMATICS, UNIVERSITY OF ICELAND</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
