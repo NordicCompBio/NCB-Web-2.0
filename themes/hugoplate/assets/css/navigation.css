@@ -47,7 +47,7 @@
   @apply inline-flex;
 
   label {
-    @apply bg-border relative inline-block h-4 w-6 cursor-pointer rounded-2xl lg:w-10;
+    @apply bg-light relative inline-block h-4 w-6 cursor-pointer rounded-2xl lg:w-10;
   }
 
   input {

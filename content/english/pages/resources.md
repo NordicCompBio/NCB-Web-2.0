@@ -12,15 +12,15 @@ draft: false
 
 One of the aims of NCB is to provide a list of useful resources for people based in the Nordics and those who want to pursue education and career here. If you would like to list any educational resources here, you can contact us using the form on the homepage.
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 40px 0;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 5px 0; background-color: #f8f9fa; padding: 15px; border-radius: 5px;">
 
   <!-- Column 1 -->
   <div style="flex: 0 0 48%; margin-bottom: 30px;">
     <!-- Country 1 -->
     <div style="margin-bottom: 20px;">
       <div style="display: flex; align-items: center;">
-        <img src="/images/Flags/Finland flag.png" alt="Finland Flag" style="width: 100px; height: auto; margin-right: 10px;">
-        <strong style="font-size: 20px;">Finland</strong>
+        {{< image src="images/country_flags/Finland flag.png" caption="" alt="Finland Flag" width="100" option="q100" webp="false">}}
+        <strong style="font-size: 20px; margin-left: 10px;">Finland</strong>
       </div>
       <br>
       <ul style="margin: 8px 0 0 30px; padding: 0;">
@@ -41,8 +41,8 @@ One of the aims of NCB is to provide a list of useful resources for people based
     <!-- Country 2 -->
     <div style="margin-bottom: 20px;">
       <div style="display: flex; align-items: center;">
-        <img src="/assets/images/Flags/Flag_of_Norway.png" alt="Norway Flag" style="width: 100px; height: auto; margin-right: 10px;">
-        <strong style="font-size: 20px;">Norway</strong>
+        {{< image src="images/country_flags/Flag_of_Norway.png" caption="" alt="Norway Flag" width="100" option="q100" webp="false" >}}
+        <strong style="font-size: 20px; margin-left: 10px;">Norway</strong>
       </div>
       <ul style="margin: 8px 0 0 30px; padding: 0;">
         <li><a href="https://www.uib.no/en/rg/bioinformatics/114033/bachelor" target="_blank">BSc BIOINFORMATICS, UNIVERSITY OF BERGEN</a></li>
@@ -54,8 +54,8 @@ One of the aims of NCB is to provide a list of useful resources for people based
     <!-- Country 3 -->
     <div style="margin-bottom: 20px;">
       <div style="display: flex; align-items: center;">
-        <img src="/assets/images/Flags/Denmark flag.png" alt="Denmark Flag" style="width: 100px; height: auto; margin-right: 10px;">
-        <strong style="font-size: 20px;">Denmark</strong>
+        {{< image src="images/country_flags/Denmark flag.png" caption="" alt="Denmark Flag" width="100" option="q100" webp="false" >}}
+        <strong style="font-size: 20px; margin-left: 10px;">Denmark</strong>
       </div>
       <ul style="margin: 8px 0 0 30px; padding: 0;">
         <li><a href="https://www.ku.dk/studies/masters/bioinformatics" target="_blank">MSc BIOINFORMATICS, UNIVERSITY OF COPENHAGEN</a></li>
@@ -69,8 +69,8 @@ One of the aims of NCB is to provide a list of useful resources for people based
     <!-- Country 4 -->
     <div style="margin-bottom: 20px;">
       <div style="display: flex; align-items: center;">
-        <img src="/assets/images/Flags/Sweden flag.png" alt="Sweden Flag" style="width: 100px; height: auto; margin-right: 10px;">
-        <strong style="font-size: 20px;">Sweden</strong>
+        {{< image src="images/country_flags/Sweden flag.png" caption="" alt="Sweden Flag" width="100" option="q100" webp="false" >}}
+        <strong style="font-size: 20px; margin-left: 10px;">Sweden</strong>
       </div>
       <ul style="margin: 8px 0 0 30px; padding: 0;">
         <li><a href="https://www.his.se/en/molecular-bioinformatics-180/" target="_blank">BSc MOLECULAR BIOINFORMATICS, UNIVERSITY OF SKÖVDE</a></li>
@@ -96,8 +96,8 @@ One of the aims of NCB is to provide a list of useful resources for people based
     <!-- Country 5 -->
     <div style="margin-bottom: 20px;">
       <div style="display: flex; align-items: center;">
-        <img src="/assets/images/Flags/Iceland.png" alt="Iceland Flag" style="width: 100px; height: auto; margin-right: 10px;">
-        <strong style="font-size: 20px;">Iceland</strong>
+        {{< image src="images/country_flags/Iceland.png" caption="" alt="Iceland Flag" width="100" option="q100" webp="false" >}}
+        <strong style="font-size: 20px; margin-left: 10px;">Iceland</strong>
       </div>
       <ul style="margin: 8px 0 0 30px; padding: 0;">
         <li><a href="https://english.hi.is/bioinformatics/ms" target="_blank">MSc BIOINFORMATICS, UNIVERSITY OF ICELAND</a></li>

@@ -7,3 +7,25 @@
 .nav-link {
   @apply text-darkmode-text-light hover:text-primary dark:text-darkmode-text-dark dark:hover:text-darkmode-primary block p-3 cursor-pointer font-semibold transition lg:px-2 lg:py-3;
 } */
+
+.announcement {
+  padding: 0 rem !important;
+}
+
+.header {
+  background-color: #042d50 !important;
+}
+
+.header .btn-sm {
+  background-color: #042d50 !important;
+  color: #ffffff !important;
+  border: solid #ffffff !important;
+}
+
+.header .nav-link {
+  color: #ffffff;
+}
+
+.header button {
+  color: #ffffff;
+}

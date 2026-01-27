@@ -11,7 +11,6 @@ draft: false
 <!-- Hero Section -->
 <div style="
     width: 100%;
-    background-image: url('assets/img/nordic-glacier-hero-banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,6 +22,7 @@ draft: false
     text-align: center;
     color: white;
     position: relative;
+    background-color: #abc8eb;
 ">
   
   <!-- Centered Heading -->
@@ -51,11 +51,12 @@ draft: false
 
 </div>
 
+<br>
+<br>
 
-<div style="display:flex; flex-wrap:wrap; align-items:center; gap:20px;">
-  <img src="{{ '/assets/img/Flags/AllNordicsFlags.png' | relative_url }}" 
-       alt="Flags of Nordic countries" 
-       style="height:400px; max-width:100%; flex-shrink:0;">
+<div style="display:flex; flex-wrap:wrap; align-items:center; gap:20px; background-color:#f0f8ff;">
+
+  {{< image src="images/country_flags/AllNordicsFlags.png" caption="" alt="Flags of Nordic countries" height="400px" option="q100" webp="false" >}}
   
   <div style="max-width:600px; flex:1;">
     <h1 style="font-size:24px; color:#2c3e50; margin-top:0;">
@@ -63,7 +64,6 @@ draft: false
       <span style="color:#16bbe0;">Hybrid</span>
       Bioinformatics Conference
     </h1>
-
     <p style="margin-bottom:10px;">
       The Nordic CompBio Week is a free and open hybrid bioinformatics conference. The conference has a format where participating Nordic regions organize in-person conference programmes and where sessions are live-streamed for virtual attendance for free according to a hub-and-spoke model. Our main sponsor is Nordic e-Infrastructure Collaboration (NeIC).​
     </p>
@@ -73,11 +73,8 @@ draft: false
 <br>
 <br>
 <div style="background:#cad1d9; padding:40px; display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start;">
-
-  <img src="{{ '/assets/img/External_Logos/Estonia_Finland_Flag.png' | relative_url }}" 
-       alt="Flags of Finland and Estonia" 
-       style="height:70px; max-width:100%; flex-shrink:0;">
-
+  
+  {{< image src="images/country_flags/Estonia_Finland_Flag.png" caption="" alt="Flags of Finland and Estonia" height="70px" option="q100" webp="false" >}}
   <div style="flex:1; min-width:250px;">
     <h2 style="font-size:28px; color:#2980b9; margin:0;">
       NCB Week 2025: Finland + Estonia
@@ -96,7 +93,6 @@ draft: false
     <p>You have the opportunity to attend and present your work there too.</p>
     <p>Abstract submission is now closed.</p>
     <p>Registration is now closed. </p>
-
     <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
       <a href="https://docs.google.com/forms/d/1cAnp0ueSv9lqa-bFdfD-dNiAlUGN2oaGJBgv09PIxY8/edit?usp=drive_web&ouid=113154760262395868407" target="_blank" 
          style="padding:15px 25px; background:#3498db; color:white; text-decoration:none; border-radius:8px;">
@@ -111,13 +107,12 @@ draft: false
         <strong>View Schedule</strong>
         </a>
     </div>
-
     <div style="display:flex; gap:30px; flex-wrap:wrap; align-items:center; margin-top:30px;">
-      <img src="{{ '/assets/img/External_Logos/UEF_white on black.jpg' | relative_url }}" alt="UEF" style="height:100px;">
-      <img src="{{ '/assets/img/External_Logos/ELIXIR Node logos_Estonia.png' | relative_url }}" alt="Elixir Estonia" style="height:100px;">
-      <img src="{{ '/assets/img/External_Logos/SemetronBD_RGB.png' | relative_url }}" alt="Olink" style="height:80px;">
-      <img src="{{ '/assets/img/External_Logos/Olink-Logotype_Black.png' | relative_url }}" alt="Semetron and BD" style="height:80px;">
-      <img src="{{ '/assets/img/External_Logos/TLU-logo.jpg' | relative_url }}" alt="Tallinn University" style="height:80px;">
+      {{< image src="images/institutes/UEF_white on black.jpg" caption="" alt="University of Eastern Finland" height="100px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/ELIXIR Node logos_Estonia.png" caption="" alt="Elixir Estonia" height="100px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/SemetronBD_RGB.png" caption="" alt="Olink" height="80px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/Olink-Logotype_Black.png" caption="" alt="Semetron and BD" height="80px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/TLU-logo.jpg" caption="" alt="Tallinn University" height="80px" option="q100" webp="false" >}}
     </div>
   </div>
 
@@ -125,10 +120,9 @@ draft: false
 <br>
 <br>
 
-
-<div style="background:#FFFFFF; padding:40px; width:100%; box-sizing:border-box;">
+<div style="background:#FFFFFF; padding:40px; width:100%; box-sizing:border-box; background-color:#f0f8ff;">
   <div style="display:flex; align-items:center; gap:15px;">
-    <img src="{{ '/assets/img/Flags/Denmark flag.png' | relative_url }}" alt="Flags of Denmark" style="height:70px;">
+  {{< image src="images/country_flags/Denmark flag.png" caption="" alt="Flag of Denmark" height="70px" option="q100" webp="false" >}}
     <h2 style="font-size:28px; color:#2980b9; margin:0;">
       NCB Week 2025: Denmark
     </h2>
@@ -138,7 +132,6 @@ draft: false
   <p>The event is organized by ELIXIR Denmark and sponsored by Novo Nordisk, Biolib and ZS Discovery. It is funded by Danish Data Science Academy (DDSA).</p>
   <p>It aims to be a dynamic forum for the bioinformatics community, including data scientists, statisticians, software developers, and wet lab scientists. This conference has been an excellent platform to exchange about the latest research and tools development in Danish bioinformatics. You will have the chance to learn, connect, and stay up-to-date with the most cutting-edge developments in the field.</p>
   <p>The conference is planned to start at 12:00 on Monday, October 27 and end at 16:30 on Tuesday, October 28.​</p>
-
   <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
     <a href="https://eventsignup.ku.dk/9danishbioinfconference" target="_blank" style="padding:15px 25px; background:#3498db; color:white; text-decoration:none; border-radius:8px;">
       <strong>Register Now</strong>

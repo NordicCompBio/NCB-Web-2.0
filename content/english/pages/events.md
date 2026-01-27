@@ -16,25 +16,22 @@ Interested in partnering with us or planning an event you'd like us to promote?
 Please send your promotional materials and event details to info@nordic-compbio.org.​
 
 
-# Upcoming events  
-
-
-
-<h2 style="font-size:24px;">NCB Hackathon 2026​​</h2>
-
+## Upcoming events  
 
 <br>
 <br>
+
+### NCB Hackathon 2026​
+ - To be decided
+
 <br>
 
-<h1 style="font-size:36px; color:#2c3e50;">Previous events</h1>  
+<h2 style="font-size:32px; color:#2c3e50;">Previous events</h2>  
 
 <div style="background:#cad1d9; width: 100%; padding:40px; display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start;">
-
-  <img src="{{ '/assets/img/Flags/Finland flag.png' | relative_url }}" 
-       alt="Flags of Finland and Estonia" 
-       style="height:70px; max-width:100%; flex-shrink:0;">
-
+  
+  {{< image src="images/country_flags/Estonia_Finland_Flag.png" caption="" alt="Flags of Finland and Estonia" height="70px" option="q100" webp="false" >}}
+  
   <div style="flex:1; min-width:250px;">
     <h2 style="font-size:28px; color:#2980b9; margin:0;">
       NCB Week 2024: Finland 
@@ -75,8 +72,8 @@ Please send your promotional materials and event details to info@nordic-compbio.
     </div>
 
   <div style="display:flex; gap:30px; flex-wrap:wrap; align-items:center; margin-top:30px;">
-      <img src="{{ '/assets/img/External_Logos/UEF_white on black.jpg' | relative_url }}" alt="UEF" style="height:100px;">
-      <img src="{{ '/assets/img/External_Logos/HY__TN23_farmaL_EN_B3____BW.png' | relative_url }}" alt="University of Helsinki" style="height:100px;">
+      {{< image src="images/institutes/UEF_white on black.jpg" caption="" alt="University of Eastern Finland" height="100px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/HY__TN23_farmaL_EN_B3____BW.png" caption="" alt="University of Helsinki" height="100px" option="q100" webp="false" >}}
     </div>
 <br>
 <br>
@@ -84,7 +81,7 @@ Please send your promotional materials and event details to info@nordic-compbio.
 
 <div style="background:#FFFFFF; padding:40px; width:100%;">
   <div style="display:flex; align-items:center; gap:15px;">
-    <img src="{{ '/assets/img/Flags/Sweden flag.png' | relative_url }}" alt="Flags of Denmark" style="height:70px;">
+    {{< image src="images/country_flags/Sweden flag.png" caption="" alt="Flag of Sweden" height="70px" option="q100" webp="false" >}}
     <h2 style="font-size:28px; color:#2980b9; margin:0;">
       NCB Week 2024: Sweden
     </h2>
@@ -118,12 +115,13 @@ Please send your promotional materials and event details to info@nordic-compbio.
   <p>The conference started off with the Swedish Bioinformatics Workshop in Stockholm (6-7 nov), followed by the programme in Lyngby Denmark (8-9 nov) and ended with a one-day event in, Kuopio Finland (10 nov). We were glad to see so many of you there!</p>
   <p>Big thanks to the conference team for putting together the programme; Shilpa Garg (Denmark), Ahmed Eltourkey (Finland), Luca Giudice (Finland), and Marcel Tarbier (Sweden). The idea was initiated by Nazeefa Fatima (Norway) and coordinated with Johan Österlund (Sweden).</p>
 <div style="text-align: center; margin-bottom: 10px;">
-  <img src="assets/img/NCB_Events/Registration NCBWeek 2023 SWE-NOR-DK BLACK_cropped.png" alt="Event Poster" style="max-width:800px; width:90%; height:auto; border-radius:8px;">
+    {{< image src="images/stats/2023/Registration NCBWeek 2023 SWE-NOR-DK BLACK_cropped.png" caption="" alt="Event Stats 2023" width="800px" option="q100" webp="false" >}}
   <p style="margin-top:10px;">Image: Registrants for online attendance for NCB Week 2023.</p>
 </div>
 <br>
 <div style="text-align: center; margin-bottom: 10px;">
-  <img src="assets/img/NCB_Events/Finland_NCBWeek2023_Stats.png" alt="Keynote Session" style="max-width:800px; width:90%; height:auto; border-radius:8px;">
+
+  {{< image src="images/stats/2023/Finland_NCBWeek2023_Stats.png" caption="" alt="Feedback 2023" width="800px" option="q100" webp="false" >}}
   <p style="margin-top:10px;">Image: Feedback for NCB Week 2023.</p>
 </div>
 
@@ -157,8 +155,7 @@ Please send your promotional materials and event details to info@nordic-compbio.
 <div style="width: 100%; background-color: #FFFFFF; padding: 60px 50px; box-sizing: border-box;">
   <div style="text-align: center; max-width: 800px; margin: 0 auto;">
     <!-- Sponsor logo -->
-    <img src="assets/img/External_Logos/nordic-e-infrastructure-collaboration-neic-vector-logo.png" 
-         alt="Keynote Session" style="max-width:300px; border-radius:8px;">
+    {{< image src="images/collaborators/nordic-e-infrastructure-collaboration-neic-vector-logo.png" caption="" alt="Nordic e-Infrastructure Collaboration (NeIC)" width="300px" option="q100" webp="false" >}}
     <!-- Main sponsor heading in different color -->
     <h3 style="margin-top: 15px; color: #e67e22; font-weight: bold;">MAIN SPONSOR</h3>
     <!-- Full name and description -->
@@ -187,18 +184,15 @@ Please send your promotional materials and event details to info@nordic-compbio.
     </p>
     <!-- 3x3 grid of collaborator logos -->
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; justify-items: center; align-items: center; max-width: 900px; margin: 0 auto;">
-    
-      <img src="assets/img/External_Logos/university-of-oslo-logo.png" alt="University of Oslo" style="max-width:150px; border-radius:8px;">
-      <img src="assets/img/External_Logos/Elixir-Europe-logo-1.png" alt="Elixir" style="max-width:150px; border-radius:8px;">
-      <img src="assets/img/External_Logos/jpg_NordicRSG_White.jpg" alt="ISCB Regional Student Groups Nordics" style="max-width:150px; border-radius:8px;">
-    
-      <img src="assets/img/External_Logos/university-of-copenhagen-logo.png" alt="University of Copenhagen" style="max-width:150px; border-radius:8px;">
-      <img src="assets/img/External_Logos/NBIS-logo.png" alt="National Bioinformatics Infrastructure Sweden" style="max-width:150px; border-radius:8px;">
-      <img src="assets/img/External_Logos/scilifelab-logo.png" alt="SciLifeLab" style="max-width:150px; border-radius:8px;">
-      
-      <img src="assets/img/External_Logos/lubilogo.png" alt="Lund University Bioinformatics Infrastructure" style="max-width:150px; border-radius:8px;">
-      <img src="assets/img/External_Logos/Women in Bioinformatics & data science LA.png" alt="Women in Bioinformatics and data science LA" style="max-width:150px; border-radius:8px;">
-      <img src="assets/img/External_Logos/ki_logo_rgb-custom20221016133022.jpg" alt="Karolinska Institutet" style="max-width:150px; border-radius:8px;">  
+      {{< image src="images/collaborators/university-of-oslo-logo.png" caption="" alt="University of Oslo" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/Elixir-Europe-logo-1.png" caption="" alt="Elixir" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/jpg_NordicRSG_White.jpg" caption="" alt="ISCB Regional Student Groups Nordics" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/university-of-copenhagen-logo.png" caption="" alt="University of Copenhagen" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/NBIS-logo.png" caption="" alt="National Bioinformatics Infrastructure Sweden" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/scilifelab-logo.png" caption="" alt="SciLifeLab" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/lubilogo.png" caption="" alt="Lund University Bioinformatics Infrastructure" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/Women in Bioinformatics & data science LA.png" caption="" alt="Women in Bioinformatics and data science LA" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/ki_logo_rgb-custom20221016133022.jpg" caption="" alt="Karolinska Institutet" width="150px" option="q100" webp="false" >}}  
     </div>
   </div>
 </div>

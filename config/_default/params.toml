@@ -1,9 +1,9 @@
 #################### default parameters ############################
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
-favicon = "images/ncb_logo.png"
+favicon = "images/NCB_Logo_Circular-filled_white_text.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
-logo = "images/ncb_logo.png"
-logo_darkmode = "images/ncb_logo.png"
+logo = "images/NCB_Logo_Circular-filled_white_text.png"
+logo_darkmode = "images/NCB_Logo_Circular-filled_white_text.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
 logo_width = "45px"
@@ -20,14 +20,14 @@ theme_default = "system" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action
-contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
+contact_form_action = "https://airform.io/nordic.compbio@gmail.com" # contact form works with [https://airform.io/] or [https://formspree.io]
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "The website is maintained by the NCB Core Team"
+copyright = "Maintained by the NCB Core Team"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -45,7 +45,7 @@ link = "sign-up"
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
 [search]
 enable = true
-primary_color = "#121212"
+primary_color = "#042d50"
 include_sections = ["blog"]
 show_image = true
 show_description = true
@@ -56,17 +56,17 @@ show_categories = true
 # announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
 [announcement]
 enable = true
-expire_days = 7
+expire_days = 30
 content = "<span class='text-center block'> Get involved! Join our Slack <a href='#' target=_blank><i class='fa-brands fa-slack'></i></a></span>"
 
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "Hugo & Tailwindcss Starter"
-author = "zeon.studio"
-twitter = "zeon_studio"
-image = "images/og-image.png"
+keywords = ["NCB", "Nordic Computational Biology", "Bioinformatics", "Nordic Countries", "Community", "Events", "Workshops"]
+description = "A platform for all things computational biology in the Nordics."
+author = "Nordic CompBio Team"
+twitter = "nordiccompbio"
+image = "images/NCB_Logo_Circular-filled_white_text.png"
 
 
 # site verifications
