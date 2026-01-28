@@ -57,7 +57,7 @@ show_categories = true
 [announcement]
 enable = true
 expire_days = 30
-content = "<span class='text-center block'> Get involved! Join our Slack <a href='#' target=_blank><i class='fa-brands fa-slack'></i></a></span>"
+content = "<span class='text-center block'> ⭐️ Get involved! Join our Slack <a href='#' target=_blank><i class='fa-brands fa-slack'></i></a></span>"
 
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo

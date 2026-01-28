@@ -3,7 +3,7 @@
     <div
       class="from-page to-page dark:from-darkmode-body dark:to-darkmode-light rounded-sm bg-gradient-to-b px-8 py-14 mt-5">
       <h1>{{ T (printf "%s" (lower .Title)) | default .Title | title }}</h1>
-      {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}
+      {{/*  {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}  */}}
     </div>
   </div>
 </section>
