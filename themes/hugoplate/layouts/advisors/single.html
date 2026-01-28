@@ -3,7 +3,7 @@
     <div class="container">
       <div
         class="row border-border dark:border-darkmode-border justify-center border-b pb-14">
-        <div class="lg:col-4 text-center">
+        <div class="lg:col-8">
           {{ $image:= .Params.image }}
           {{ if $image }}
             {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto" "Size" "200x200") }}
@@ -15,7 +15,11 @@
               width="200"
               src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
           {{ end }}
-          <h1 class="h3 mt-10">{{ .Title }}</h1>
+          <h1 class="h3 mt-10 text-center">{{ .Title }}</h1>
+          <div class="text-center text-lg text-muted">
+            {{ with .Params.Position }}<em>{{ . }} , </em>{{ end }}
+            {{ with .Params.Country }} <span>{{ . }}</span>{{ end }}
+          </div>
           <div class="content mt-6">
             {{ .Content }}
           </div>

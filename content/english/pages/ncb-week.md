@@ -8,22 +8,7 @@ description: "Yearly NCB Week events"
 draft: false
 ---
 
-<!-- Hero Section -->
-<div style="
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;  /* adjust height as needed */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    position: relative;
-    background-color: #abc8eb;
-">
+
   
   <!-- Centered Heading -->
   <h1 style="font-size: 48px; font-weight: bold; margin: 0 20px;">
@@ -48,8 +33,6 @@ draft: false
       We follow the Code of Conduct for all our events
     </a>
   </div>
-
-</div>
 
 <br>
 <br>
