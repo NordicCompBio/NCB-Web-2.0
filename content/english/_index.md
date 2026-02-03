@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Know More"
-    link: "/about"
+    link: "./about/"
 
 # Features
 features:

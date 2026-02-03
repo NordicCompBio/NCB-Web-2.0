@@ -1,3 +1,3 @@
 ---
-title: "NCB Board Members"
+title: "NCB Board"
 ---

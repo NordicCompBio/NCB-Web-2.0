@@ -19,7 +19,7 @@ draft: false
         <div style="flex-grow: 1; padding-top: 8px;">
             <h2 style="font-size: 24px; font-weight: 600; margin-bottom: 16px; color: #1a1a1a;">Step 1</h2>
             <p style="color: #4a4a4a; line-height: 1.6; margin-bottom: 16px;">
-                This is a completed step, which can be shown differently if the "completedContent" prop is provided.
+                Choose the type of involvement that suits you best. Whether you're interested in volunteering, participating in events, or become a core member of NCB.
             </p>
         </div>
     </div>
@@ -31,10 +31,10 @@ draft: false
         <div style="flex-grow: 1; padding-top: 8px;">
             <h2 style="font-size: 24px; font-weight: 600; margin-bottom: 16px; color: #1a1a1a;">Step 2</h2>
             <p style="color: #4a4a4a; line-height: 1.6; margin-bottom: 16px;">
-                This is the content of a MdStep. It can contain anything you want, text or HTML.
+                Use the registration form to provide us with your details and preferences.
             </p>
             <p style="color: #4a4a4a; line-height: 1.6; margin-bottom: 16px;">
-                Here is a paragraph!
+                You will be contacted by our team after we review your submission.
             </p>
             <div style="margin-top: 24px;">
                 <a style="padding: 12px 24px; font-size: 16px; font-weight: 500; border-radius: 6px; cursor: pointer; background-color: #3d6b6b; color: white; border: none;" href='https://docs.google.com/forms/d/e/1FAIpQLSdlkCWgLYHruRqYUZRzkDOETeyZ2pWOc08fIGK0L01Cpd6L7Q/viewform?usp=send_form' target=_blank>Registration form →</a>
@@ -47,6 +47,9 @@ draft: false
         </div>
         <div style="flex-grow: 1; padding-top: 8px;">
             <h2 style="font-size: 24px; font-weight: 600; margin-bottom: 16px; color: #1a1a1a;">Step 3</h2>
+                        <p style="color: #4a4a4a; line-height: 1.6; margin-bottom: 16px;">
+                We will review your application and get back to you with the next steps.
+            </p>
         </div>
     </div>
 </div>

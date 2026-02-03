@@ -22,13 +22,18 @@ name = "Events"
 
 [[main]]
 parent = "Events"
-name = "Hosted Events"
+name = "Upcoming Events"
 url = "/events"
 
 [[main]]
 parent = "Events"
 name = "NCB Week"
 url = "/ncb-week"
+
+[[main]]
+parent = "Events"
+name = "Past Events"
+url = "/past-events"
 
 [[main]]
 weight = 5
@@ -41,13 +46,23 @@ url = "/core"
 
 [[main]]
 parent = "Team"
-name = "Advisors"
+name = "NCB Board"
 url = "/advisors"
+
+[[main]]
+name = "Partnerships"
+url = "/partnerships"
+weight = 6
+
+[[main]]
+name = "Jobs"
+url = "/jobs"
+weight = 7
 
 [[main]]
 name = "Contact"
 url = "/contact"
-weight = 7
+weight = 8
 
 [[footer]]
 name = "Privacy Policy"

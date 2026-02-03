@@ -1,6 +1,6 @@
 ---
 title: "Contact"
 meta_title: ""
-description: "this is meta description"
+description: "Get in touch with Nordic Computational Biology (NCB) for inquiries, support, or collaboration opportunities."
 draft: false
 ---

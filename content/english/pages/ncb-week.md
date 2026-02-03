@@ -9,13 +9,6 @@ draft: false
 ---
 
 
-  
-  <!-- Centered Heading -->
-  <h1 style="font-size: 48px; font-weight: bold; margin: 0 20px;">
-    NCB Week
-  </h1>
-  <br>
-  <br>
   <!-- Colored Box with Text & Hyperlink -->
   <div style="
       background-color: rgba(0, 34, 51, 0.8);  /* semi-transparent orange */
