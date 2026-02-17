@@ -1,5 +1,5 @@
 ---
-title: "Jobs"
+title: "🎓 Jobs"
 # meta title
 meta_title: "New/CompBio Job Opportunities in the Nordics"
 # meta description

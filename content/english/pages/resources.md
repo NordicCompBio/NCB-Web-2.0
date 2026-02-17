@@ -1,5 +1,5 @@
 ---
-title: "Resources"
+title: "📝Resources"
 # meta title
 meta_title: ""
 # meta description
