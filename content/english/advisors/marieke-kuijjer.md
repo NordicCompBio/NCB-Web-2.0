@@ -3,7 +3,7 @@ title: Marieke Kuijjer
 email: johndoe@email.com
 image: "/images/advisors/marieke_kuijjer.jpg"
 description: Advisory Board Member
-position: Advisory Board Member
+position: Associate Professor, University of Helsinki
 country: 🇳🇴
 social:
   - name: website

@@ -3,7 +3,7 @@ title: Anthony Mathelier
 email: johndoe@email.com
 image: "/images/advisors/anthony_mathelier.jpg"
 description: Advisory Board Member
-position: Advisory Board Member
+position: Assistant Centre Director, NCMBM-AMG
 country: 🇳🇴
 social:
   - name: website

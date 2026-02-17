@@ -3,7 +3,7 @@ title: Jing Tang
 email: johndoe@email.com
 image: "/images/advisors/jing_tang.jpg"
 description: Advisory Board Member
-position: Advisory Board Member
+position: Associate Professor, UoH
 country: 🇫🇮
 social:
   - name: website

@@ -3,7 +3,7 @@ title: Marcel Tarbier
 email: johndoe@email.com
 image: "/images/advisors/marcel_tarbier.jpg"
 description: Advisory Board Member
-position: Advisory Board Member
+position: DDLS Fellow, Uppsala University
 country: 🇸🇪
 social:
   - name: website

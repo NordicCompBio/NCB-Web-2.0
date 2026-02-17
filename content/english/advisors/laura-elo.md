@@ -3,7 +3,7 @@ title: Laura Elo
 email: johndoe@email.com
 image: "/images/advisors/laura_elo.jpg"
 description: Advisory Board Member
-position: Advisory Board Member
+position: Professor, Turku Bioscience Centre
 country: 🇫🇮
 social:
   - name: website
