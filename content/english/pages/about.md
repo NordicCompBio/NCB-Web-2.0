@@ -8,7 +8,11 @@ description: "About NCB"
 draft: false
 ---
 
+<div style="text-align: center;">
 
+{{< image src="images/ncb_hero_bg.png" caption="" alt="NCB Background Image" width="800px" option="q100" webp="false" >}}
+
+</div>
 
 ## 📖 Background
 

@@ -76,7 +76,9 @@ Please send your promotional materials and event details to info@nordic-compbio.
       {{< image src="images/collaborators/scilifelab-logo.png" caption="" alt="SciLifeLab" width="150px" option="q100" webp="false" >}}
       {{< image src="images/collaborators/lubilogo.png" caption="" alt="Lund University Bioinformatics Infrastructure" width="150px" option="q100" webp="false" >}}
       {{< image src="images/collaborators/Women in Bioinformatics & data science LA.png" caption="" alt="Women in Bioinformatics and data science LA" width="150px" option="q100" webp="false" >}}
-      {{< image src="images/collaborators/ki_logo_rgb-custom20221016133022.jpg" caption="" alt="Karolinska Institutet" width="150px" option="q100" webp="false" >}}  
+      {{< image src="images/collaborators/ki_logo_rgb-custom20221016133022.jpg" caption="" alt="Karolinska Institutet" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/UEF_white on black.jpg" caption="" alt="University of Eastern Finland" width="150px" option="q100" webp="false" >}}  
+      {{< image src="images/institutes/HY__TN23_farmaL_EN_B3____BW.png" caption="" alt="Helsinki University" width="150px" option="q100" webp="false" >}}  
     </div>
   </div>
 </div>
