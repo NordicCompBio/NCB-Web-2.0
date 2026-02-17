@@ -3,7 +3,7 @@
 banner:
   title: "Nordic Computational Biology"
   content: "A platform for all things computational biology in the Nordics. NCB is made up of life scientists for life scientists, computer scientists, and bioinformaticians"
-  image: "images/ncb_hero_bg.png" #/images/ncb_hero_banner.png, image only adds item at bottom
+  image: "images/ncb_hero_banner.png" #/images/ncb_hero_banner.png, image only adds item at bottom
   button:
     enable: true
     label: "Know More"

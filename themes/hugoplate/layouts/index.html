@@ -1,14 +1,25 @@
 {{ define "main" }}
   <!-- Banner -->
   {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
+    {{/* Render the image partial to a string, then extract the src URL */}}
+    {{ $imgTag := partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "DisplayXL" "800x") }}
+    {{ $imgSrc := "" }}
+    {{ range (findRE `src="([^"]+)"` ($imgTag | string) 1) }}
+      {{ $imgSrc = . | replaceRE `src="([^"]+)"` "$1" }}
+    {{ end }}
+
+    <section
+      class="section pt-14 relative bg-fixed bg-center bg-cover bg-no-repeat min-h-[900px] flex items-center justify-center"
+      {{ with $imgSrc }}style="background-image: url('{{ . }}')"{{ end }}
+    >
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="container relative z-10">
         <div class="row justify-center">
-          <div class="lg:col-7 md:col-9 mb-8 text-center">
-            <h1 class="mb-4 text-h3 lg:text-h1">
+          <div class="lg:col-7 md:col-9 py-20 text-center flex flex-col items-center justify-center">
+            <h1 class="mb-4 text-h3 lg:text-h1 text-white">
               {{ .title | markdownify }}
             </h1>
-            <p class="mb-8">
+            <p class="mb-8 text-white/90">
               {{ .content | markdownify }}
             </p>
             {{ with .button }}
@@ -24,9 +35,6 @@
                 </a>
               {{ end }}
             {{ end }}
-          </div>
-          <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
           </div>
         </div>
       </div>
