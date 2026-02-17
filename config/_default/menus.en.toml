@@ -41,7 +41,7 @@ name = "Team"
 
 [[main]]
 parent = "Team"
-name = "Core Members"
+name = "Core"
 url = "/core"
 
 [[main]]

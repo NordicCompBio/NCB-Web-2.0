@@ -2,8 +2,8 @@
 title: Ahmed Eltorky
 email: johndoe@email.com
 image: "/images/core_team/ahmed.jpg"
-description: Project member
-position: Project member
+description: Project Coordinator
+position: Project Coordinator
 country: 🇫🇮
 social:
   - name: linkedin
