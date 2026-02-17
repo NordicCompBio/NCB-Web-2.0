@@ -1,5 +1,5 @@
 ---
-title: "🎓 Jobs"
+title: "💻 Jobs"
 # meta title
 meta_title: "New/CompBio Job Opportunities in the Nordics"
 # meta description
@@ -14,6 +14,14 @@ These are the current open positions in the Nordic countries related to computat
 
 | Position        |      Location      | Salary | Deadline | Link |
 | ------------- | ----------- | ---- | ---- | ---- |
-| Postdoctoral Fellow in Computational Human Epigenetics | Oslo, Norway | NOK 660 000–690 000 | 08-02-2026 | [Apply](https://www.finn.no/job/ad/446255833) |
-| Call for Academic and Industrial Postdoctoral Fellowships in Data-Driven Life Science 2026 | Stockholm, Sweden | NA | 31-03-2026 | [Apply](https://www.scilifelab.se/data-driven/ddls-research-school/ddls-research-school-postdoc-call-2026/) |
-| Postdoctoral Position in Computational Immunology and Bioinformatics | Lund University, Sweden |  NA  | 20-02-2026 | [Apply](https://www.linkedin.com/feed/update/urn:li:activity:7421889650304126976/) |
+| Postdoctoral Fellow in Computational Human Epigenetics | Oslo, Norway | NOK 660 000–690 000 | 08-02-2026 | {{< button label="Apply" link="https://www.finn.no/job/ad/446255833" style="solid" >}} |
+| Call for Academic and Industrial Postdoctoral Fellowships in Data-Driven Life Science 2026 | Stockholm, Sweden | NA | 31-03-2026 | {{< button label="Apply" link="https://www.scilifelab.se/data-driven/ddls-research-school/ddls-research-school-postdoc-call-2026/" style="solid" >}} |
+| Postdoctoral Position in Computational Immunology and Bioinformatics | Lund University, Sweden |  NA  | 20-02-2026 | {{< button label="Apply" link="https://www.linkedin.com/feed/update/urn:li:activity:7421889650304126976/" style="solid" >}} |
+
+
+<style>
+th {
+  background-color: #042d50;
+  color: #ffffff;
+}
+</style>
