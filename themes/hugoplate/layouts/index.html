@@ -44,7 +44,7 @@
 
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
-    <section class="section-sm {{ if (modBool $i 2) }}bg-gray-300{{ end }}">
+    <section class="section-sm {{ if eq $i 0 }}bg-light dark:bg-darkmode-light{{ else if (modBool $i 2) }}bg-gray-300 dark:bg-darkmode-light{{ end }} {{ if eq $i 0 }}text-text dark:text-darkmode-text{{ end }}">
       <div class="container">
         <div class="row items-center justify-between">
           <div
@@ -57,15 +57,15 @@
             class="{{ if not (modBool $i 2) }}
               md:order-1
             {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4">
+            <h2 class="mb-4 {{ if eq $i 0 }}text-text-dark dark:text-darkmode-text-dark{{ end }}">
               {{ .title | markdownify }}
             </h2>
-            <p class="mb-8 text-lg">
+            <p class="mb-8 text-lg {{ if eq $i 0 }}text-text dark:text-darkmode-text{{ end }}">
               {{ .content | markdownify }}
             </p>
-            <ul>
+            <ul class="{{ if eq $i 0 }}[&_a]:text-primary dark:[&_a]:text-darkmode-primary [&_a]:font-bold [&_a]:no-underline hover:[&_a]:opacity-90{{ end }}">
               {{ range .bulletpoints }}
-                <li class="relative mb-4 pl-6">
+                <li class="relative mb-4 pl-6 {{ if eq $i 0 }}text-text dark:text-darkmode-text{{ end }}">
                   <i class="fa fa-check absolute left-0 top-1.5"></i>
                   {{ . | markdownify }}
                 </li>

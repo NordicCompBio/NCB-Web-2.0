@@ -1,0 +1,24 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption" }}
+{{ $class := .Get "class" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+
+{{ $size := "" }}
+{{ if and $width $height }}
+  {{ $size = printf "%sx%s" (replaceRE `px$` "" $width) (replaceRE `px$` "" $height) }}
+{{ else if $width }}
+  {{ $size = printf "%sx" (replaceRE `px$` "" $width) }}
+{{ else if $height }}
+  {{ $size = printf "x%s" (replaceRE `px$` "" $height) }}
+{{ end }}
+
+{{ $dict := dict "Src" $src "Alt" $alt }}
+{{ with $class }}{{ $dict = merge $dict (dict "Class" .) }}{{ end }}
+{{ with $size }}{{ $dict = merge $dict (dict "Size" .) }}{{ end }}
+{{ $img := partial "image" $dict }}
+{{ $img = replaceRE `(?m)^\s+` "" $img }}
+{{ $img = strings.TrimSpace $img }}
+{{ $img | safeHTML }}
+{{ with $caption }}<p>{{ . }}</p>{{ end }}
