@@ -46,7 +46,7 @@ url = "/core"
 
 [[main]]
 parent = "Team"
-name = "NCB Board"
+name = "Board"
 url = "/advisors"
 
 [[main]]

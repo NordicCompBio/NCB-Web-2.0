@@ -1,3 +1,3 @@
 ---
-title: "NCB Board"
+title: "Board"
 ---

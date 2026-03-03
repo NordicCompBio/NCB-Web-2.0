@@ -5,6 +5,7 @@ image: "/images/core_team/arup.jpeg"
 description: Project member
 position: Project member
 country: 🇳🇴
+member_order: 5
 social:
   - name: website
     icon: fa-solid fa-link

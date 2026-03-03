@@ -5,6 +5,7 @@ image: "/images/core_team/nazeefa.jpg"
 description: Project lead
 position: Project lead
 country: 🇳🇴 🇸🇪
+member_order: 1
 social:
   - name: github
     icon: fa-brands fa-github

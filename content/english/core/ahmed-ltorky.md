@@ -5,6 +5,7 @@ image: "/images/core_team/ahmed.jpg"
 description: Project Coordinator
 position: Project Coordinator
 country: 🇫🇮
+member_order: 2
 social:
   - name: linkedin
     icon: fa-brands fa-linkedin

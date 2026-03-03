@@ -5,6 +5,7 @@ image: "/images/core_team/johan.jpg"
 description: Project member
 position: Project member
 country: 🇸🇪
+member_order: 3
 social:
   - name: linkedin
     icon: fa-brands fa-linkedin

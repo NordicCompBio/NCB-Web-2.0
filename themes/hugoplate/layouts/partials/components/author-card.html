@@ -1,24 +1,23 @@
-<div class="bg-light dark:bg-darkmode-light rounded p-8 text-center">
+<div class="bg-light dark:bg-darkmode-light rounded p-8 text-center h-full flex flex-col">
   {{ $image:= .Params.image }}
   {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6 rounded-full object-cover" "size" "80x80") }}
+    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6 rounded-full object-cover" "size" "56x56") }}
   {{ else if .Params.Email }}
     <img
       class="mx-auto mb-6 rounded"
       alt="{{ .Title }}"
-      height="120"
-      width="120"
+      height="56"
+      width="56"
       src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
   {{ end }}
   <h4 class="mb-3">
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}">{{ .Title }}{{ with .Params.Country }} <span>{{ . }}</span>{{ end }}</a>
   </h4>
   <p class="mb-4">
     {{/*  {{ .Summary | plainify }}  */}}
-    {{ with .Params.Position }}<em>{{ . }} , </em>{{ end }}
-    {{ with .Params.Country }} <span>{{ . }}</span>{{ end }}
+    {{ with .Params.Position }}<em>{{ . }}</em>{{ end }}
   </p>
-  <ul class="social-icons">
+  <ul class="social-icons mt-auto">
     {{ range .Params.social }}
       <li>
         <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
