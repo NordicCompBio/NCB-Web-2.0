@@ -1,0 +1,21 @@
+{{ $country := . | default "" }}
+{{ if $country }}
+  {{ $hasKnown := false }}
+  <span class="inline-flex items-center gap-1 align-middle" aria-label="Country flags">
+    {{ if in $country "🇫🇮" }}
+      {{ $hasKnown = true }}
+      <img src="https://flagicons.lipis.dev/flags/4x3/fi.svg" alt="Finland" class="inline-block h-4 w-6 rounded-sm object-cover" loading="lazy" />
+    {{ end }}
+    {{ if in $country "🇳🇴" }}
+      {{ $hasKnown = true }}
+      <img src="https://flagicons.lipis.dev/flags/4x3/no.svg" alt="Norway" class="inline-block h-4 w-6 rounded-sm object-cover" loading="lazy" />
+    {{ end }}
+    {{ if in $country "🇸🇪" }}
+      {{ $hasKnown = true }}
+      <img src="https://flagicons.lipis.dev/flags/4x3/se.svg" alt="Sweden" class="inline-block h-4 w-6 rounded-sm object-cover" loading="lazy" />
+    {{ end }}
+    {{ if not $hasKnown }}
+      <span>{{ $country }}</span>
+    {{ end }}
+  </span>
+{{ end }}

@@ -1,6 +1,17 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
+  <style>
+    .team-member-trigger {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .team-member-trigger:hover {
+      opacity: 0.85;
+    }
+  </style>
+
   <section id="core" class="section pb-0">
     <div class="container">
       <div class="row">
@@ -10,7 +21,60 @@
         {{ with site.GetPage "section" "core" }}
           {{ range .RegularPages.ByParam "member_order" }}
             <div class="md:col-6 lg:col-3 mb-14 flex">
-              {{ partial "components/author-card" . }}
+              <div class="bg-light dark:bg-darkmode-light rounded p-8 text-center h-full flex flex-col w-full">
+                {{ $image:= .Params.image }}
+                {{ if $image }}
+                  {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6 rounded-full object-cover" "size" "56x56") }}
+                {{ else if .Params.Email }}
+                  <img
+                    class="mx-auto mb-6 rounded"
+                    alt="{{ .Title }}"
+                    height="56"
+                    width="56"
+                    src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
+                {{ end }}
+                {{ $modalID := printf "team-modal-%s" .File.UniqueID }}
+                <h4 class="mb-3">
+                  <button type="button" class="team-member-trigger" data-team-modal="{{ $modalID }}">
+                    {{ .Title }}
+                  </button>
+                  {{ with .Params.Country }} {{ partial "components/country-flags" . }}{{ end }}
+                </h4>
+                <p class="mb-0">
+                  {{ with .Params.Position }}<em>{{ . }}</em>{{ end }}
+                </p>
+              </div>
+
+              <div id="{{ $modalID }}" class="hidden fixed inset-0 z-50 items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="{{ .Title }} details">
+                <div class="absolute inset-0 bg-black/60" data-team-close></div>
+                <div class="relative bg-light dark:bg-darkmode-light rounded-lg w-full max-w-2xl max-h-[85vh] overflow-y-auto p-6 md:p-8">
+                  <button type="button" class="absolute right-3 top-3 text-xl leading-none" aria-label="Close" data-team-close>
+                    &times;
+                  </button>
+
+                  <h3 class="h4 mb-2">{{ .Title }}{{ with .Params.Country }} {{ partial "components/country-flags" . }}{{ end }}</h3>
+                  {{ with .Params.Position }}
+                    <p class="text-sm mb-4"><em>{{ . }}</em></p>
+                  {{ end }}
+
+                  <div class="content mb-6">
+                    {{ .Content }}
+                  </div>
+
+                  {{ with .Params.social }}
+                    <ul class="social-icons">
+                      {{ range . }}
+                        <li>
+                          <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
+                            <span class="sr-only">{{ .name }}</span>
+                            <i class="{{ .icon }}"></i>
+                          </a>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+                </div>
+              </div>
             </div>
           {{ end }}
         {{ end }}
@@ -27,11 +91,100 @@
         {{ with site.GetPage "section" "advisors" }}
           {{ range .RegularPages.ByParam "member_order" }}
             <div class="md:col-6 lg:col-3 mb-14 flex">
-              {{ partial "components/author-card" . }}
+              <div class="bg-light dark:bg-darkmode-light rounded p-8 text-center h-full flex flex-col w-full">
+                {{ $image:= .Params.image }}
+                {{ if $image }}
+                  {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6 rounded-full object-cover" "size" "56x56") }}
+                {{ else if .Params.Email }}
+                  <img
+                    class="mx-auto mb-6 rounded"
+                    alt="{{ .Title }}"
+                    height="56"
+                    width="56"
+                    src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
+                {{ end }}
+                {{ $modalID := printf "team-modal-%s" .File.UniqueID }}
+                <h4 class="mb-3">
+                  <button type="button" class="team-member-trigger" data-team-modal="{{ $modalID }}">
+                    {{ .Title }}
+                  </button>
+                  {{ with .Params.Country }} {{ partial "components/country-flags" . }}{{ end }}
+                </h4>
+                <p class="mb-0">
+                  {{ with .Params.Position }}<em>{{ . }}</em>{{ end }}
+                </p>
+              </div>
+
+              <div id="{{ $modalID }}" class="hidden fixed inset-0 z-50 items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="{{ .Title }} details">
+                <div class="absolute inset-0 bg-black/60" data-team-close></div>
+                <div class="relative bg-light dark:bg-darkmode-light rounded-lg w-full max-w-2xl max-h-[85vh] overflow-y-auto p-6 md:p-8">
+                  <button type="button" class="absolute right-3 top-3 text-xl leading-none" aria-label="Close" data-team-close>
+                    &times;
+                  </button>
+
+                  <h3 class="h4 mb-2">{{ .Title }}{{ with .Params.Country }} {{ partial "components/country-flags" . }}{{ end }}</h3>
+                  {{ with .Params.Position }}
+                    <p class="text-sm mb-4"><em>{{ . }}</em></p>
+                  {{ end }}
+
+                  <div class="content mb-6">
+                    {{ .Content }}
+                  </div>
+
+                  {{ with .Params.social }}
+                    <ul class="social-icons">
+                      {{ range . }}
+                        <li>
+                          <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
+                            <span class="sr-only">{{ .name }}</span>
+                            <i class="{{ .icon }}"></i>
+                          </a>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+                </div>
+              </div>
             </div>
           {{ end }}
         {{ end }}
       </div>
     </div>
   </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const triggers = document.querySelectorAll("[data-team-modal]");
+
+      function closeAllTeamModals() {
+        document.querySelectorAll('[id^="team-modal-"]').forEach(function (modal) {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+        });
+        document.body.classList.remove("overflow-hidden");
+      }
+
+      triggers.forEach(function (trigger) {
+        trigger.addEventListener("click", function () {
+          const modalId = trigger.getAttribute("data-team-modal");
+          const modal = document.getElementById(modalId);
+          if (!modal) return;
+          closeAllTeamModals();
+          modal.classList.remove("hidden");
+          modal.classList.add("flex");
+          document.body.classList.add("overflow-hidden");
+        });
+      });
+
+      document.querySelectorAll("[data-team-close]").forEach(function (closeButton) {
+        closeButton.addEventListener("click", closeAllTeamModals);
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeAllTeamModals();
+        }
+      });
+    });
+  </script>
 {{ end }}
