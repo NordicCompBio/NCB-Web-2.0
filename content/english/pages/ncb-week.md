@@ -185,6 +185,55 @@ draft: false
 </div>
 
 <div class="ncb-spacer"></div>
+
+<div class="ncb-section ncb-event-card" style="background:#cad1d9;">
+
+  {{< image src="images/country_flags/Sweden flag.png" caption="" alt="Flag of Sweden" height="70px" option="q100" webp="false" >}}
+  <div class="ncb-event-content">
+    <h2 class="ncb-event-title" style="font-size:28px; color:#2980b9; margin:0;">
+      NCB Week 2026: Sweden - Gothenburg
+    </h2>
+    <p class="ncb-event-meta">12-13 March</p>
+    <p>The Swedish Bioinformatics Workshop (SBW) is one of the largest conferences in Sweden within bioinformatics and computational biology.</p>
+    <p>The event is hosted at Wallenberg Conference Center and welcomes participants from all career stages and sectors.</p>
+    <p>The programme features:</p>
+    <ul>
+      <li>Two full days of talks</li>
+      <li>Six themed sessions and a dedicated poster session</li>
+      <li>Workshops: Data management, Academic Writing, Data Visualisation, Bacterial Genomics</li>
+      <li>Networking opportunities with national and international keynote speakers</li>
+    </ul>
+    <div class="ncb-cta-row" style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
+      <a href="https://sbw2026.org/" target="_blank" rel="noopener nofollow"
+         style="padding:15px 25px; background:#3498db; color:white; text-decoration:none; border-radius:8px;">
+        <strong>Further details</strong>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<div class="ncb-spacer"></div>
+
+<div class="ncb-section ncb-event-card" style="background:#f0f8ff;">
+
+  {{< image src="images/country_flags/Finland flag.png" caption="" alt="Flag of Finland" height="70px" option="q100" webp="false" >}}
+  <div class="ncb-event-content">
+    <h2 class="ncb-event-title" style="font-size:28px; color:#2980b9; margin:0;">
+      NCB Week 2026: Finland
+    </h2>
+    <p>The Nordic Computational Biology week in Finland is organized by NCB and University of Eastern Finland.</p>
+    <p>The event is tailored for Bioinformaticians and Computational Biologists. It is an excellent opportunity for researchers and students working with biological data who are keen on exploring new bioinformatics methods, workflows, or challenges.</p>
+    <p>Stay tuned for more information soon on location and registration.</p>
+    <div class="ncb-logo-row" style="display:flex; gap:30px; flex-wrap:wrap; align-items:center; margin-top:24px;">
+      {{< image src="images/institutes/UEF_white on black.jpg" caption="" alt="University of Eastern Finland" height="90px" option="q100" webp="false" >}}
+    </div>
+  </div>
+
+</div>
+
+<div class="ncb-spacer"></div>
+
 <div class="ncb-section ncb-event-card" style="background:#cad1d9;">
   
   {{< image src="images/country_flags/Estonia_Finland_Flag.png" caption="" alt="Flags of Finland and Estonia" height="70px" option="q100" webp="false" >}}
@@ -232,21 +281,20 @@ draft: false
 <div class="ncb-spacer"></div>
 
 <div class="ncb-section ncb-event-card" style="background:#FFFFFF; padding:40px; width:100%; box-sizing:border-box; background-color:#f0f8ff;">
-  <div style="display:flex; align-items:center; gap:15px;">
   {{< image src="images/country_flags/Denmark flag.png" caption="" alt="Flag of Denmark" height="70px" option="q100" webp="false" >}}
+  <div class="ncb-event-content">
     <h2 class="ncb-event-title" style="font-size:28px; color:#2980b9; margin:0;">
       NCB Week 2025: Denmark
     </h2>
-  </div>
-  <br>
-  <p><strong>27-28 Oct: Aalborg</strong></p>
-  <p>The event is organized by ELIXIR Denmark and sponsored by Novo Nordisk, Biolib and ZS Discovery. It is funded by Danish Data Science Academy (DDSA).</p>
-  <p>It aims to be a dynamic forum for the bioinformatics community, including data scientists, statisticians, software developers, and wet lab scientists. This conference has been an excellent platform to exchange about the latest research and tools development in Danish bioinformatics. You will have the chance to learn, connect, and stay up-to-date with the most cutting-edge developments in the field.</p>
-  <p>The conference is planned to start at 12:00 on Monday, October 27 and end at 16:30 on Tuesday, October 28.​</p>
-  <div class="ncb-cta-row" style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
-    <a href="https://eventsignup.ku.dk/9danishbioinfconference" target="_blank" style="padding:15px 25px; background:#3498db; color:white; text-decoration:none; border-radius:8px;">
-      <strong>Register Now</strong>
-    </a>
+    <p class="ncb-event-meta">27-28 Oct: Aalborg</p>
+    <p>The event is organized by ELIXIR Denmark and sponsored by Novo Nordisk, Biolib and ZS Discovery. It is funded by Danish Data Science Academy (DDSA).</p>
+    <p>It aims to be a dynamic forum for the bioinformatics community, including data scientists, statisticians, software developers, and wet lab scientists. This conference has been an excellent platform to exchange about the latest research and tools development in Danish bioinformatics. You will have the chance to learn, connect, and stay up-to-date with the most cutting-edge developments in the field.</p>
+    <p>The conference is planned to start at 12:00 on Monday, October 27 and end at 16:30 on Tuesday, October 28.​</p>
+    <div class="ncb-cta-row" style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
+      <a href="https://eventsignup.ku.dk/9danishbioinfconference" target="_blank" style="padding:15px 25px; background:#3498db; color:white; text-decoration:none; border-radius:8px;">
+        <strong>Register Now</strong>
+      </a>
+    </div>
   </div>
 </div>
 

@@ -1,18 +1,26 @@
 {{ $country := . | default "" }}
 {{ if $country }}
   {{ $hasKnown := false }}
+  {{ $fi := resources.Get "images/country_flags/svg/fi.svg" }}
+  {{ $no := resources.Get "images/country_flags/svg/no.svg" }}
+  {{ $se := resources.Get "images/country_flags/svg/se.svg" }}
+  {{ $ee := resources.Get "images/country_flags/svg/ee.svg" }}
   <span class="inline-flex items-center gap-1 align-middle" aria-label="Country flags">
     {{ if in $country "🇫🇮" }}
       {{ $hasKnown = true }}
-      <img src="https://flagicons.lipis.dev/flags/4x3/fi.svg" alt="Finland" class="inline-block h-4 w-6 rounded-sm object-cover" loading="lazy" />
+      <img src="{{ $fi.RelPermalink }}" alt="Finland" class="inline-block h-4 w-6 rounded-sm object-cover" loading="lazy" />
     {{ end }}
     {{ if in $country "🇳🇴" }}
       {{ $hasKnown = true }}
-      <img src="https://flagicons.lipis.dev/flags/4x3/no.svg" alt="Norway" class="inline-block h-4 w-6 rounded-sm object-cover" loading="lazy" />
+      <img src="{{ $no.RelPermalink }}" alt="Norway" class="inline-block h-4 w-6 rounded-sm object-cover" loading="lazy" />
     {{ end }}
     {{ if in $country "🇸🇪" }}
       {{ $hasKnown = true }}
-      <img src="https://flagicons.lipis.dev/flags/4x3/se.svg" alt="Sweden" class="inline-block h-4 w-6 rounded-sm object-cover" loading="lazy" />
+      <img src="{{ $se.RelPermalink }}" alt="Sweden" class="inline-block h-4 w-6 rounded-sm object-cover" loading="lazy" />
+    {{ end }}
+    {{ if in $country "🇪🇪" }}
+      {{ $hasKnown = true }}
+      <img src="{{ $ee.RelPermalink }}" alt="Estonia" class="inline-block h-4 w-6 rounded-sm object-cover" loading="lazy" />
     {{ end }}
     {{ if not $hasKnown }}
       <span>{{ $country }}</span>
