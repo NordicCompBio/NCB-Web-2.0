@@ -1,0 +1,37 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section id="core" class="section pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-10">
+          <h2 class="h3">Core</h2>
+        </div>
+        {{ with site.GetPage "section" "core" }}
+          {{ range .RegularPages.ByParam "member_order" }}
+            <div class="md:col-6 lg:col-3 mb-14 flex">
+              {{ partial "components/author-card" . }}
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section id="board" class="section pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-10">
+          <h2 class="h3">Board</h2>
+        </div>
+        {{ with site.GetPage "section" "advisors" }}
+          {{ range .RegularPages.ByParam "member_order" }}
+            <div class="md:col-6 lg:col-3 mb-14 flex">
+              {{ partial "components/author-card" . }}
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

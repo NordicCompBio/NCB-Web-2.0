@@ -42,12 +42,12 @@ name = "Team"
 [[main]]
 parent = "Team"
 name = "Core"
-url = "/core"
+url = "/team/#core"
 
 [[main]]
 parent = "Team"
 name = "Board"
-url = "/advisors"
+url = "/team/#board"
 
 [[main]]
 name = "Partnerships"

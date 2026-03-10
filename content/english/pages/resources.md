@@ -39,6 +39,9 @@ One of the aims of NCB is to provide a list of useful resources for people based
 		text-decoration-thickness: 2px;
 		text-underline-offset: 2px;
 	}
+	.dark .resources-page .accordion a {
+		color: #9ed0ff;
+	}
 	.resources-page .accordion a:hover {
 		text-decoration-thickness: 3px;
 	}
