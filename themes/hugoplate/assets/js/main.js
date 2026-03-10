@@ -6,7 +6,8 @@
   // ----------------------------------------
   new Swiper(".testimonial-slider", {
     spaceBetween: 24,
-    loop: true,
+    loop: false,
+    rewind: true,
     pagination: {
       el: ".testimonial-slider-pagination",
       type: "bullets",

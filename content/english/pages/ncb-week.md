@@ -34,7 +34,11 @@ draft: false
     padding: 15px 30px;
     border-radius: 10px;
     margin-top: 20px;
-    display: inline-block;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   .ncb-week-page .ncb-coc-link {

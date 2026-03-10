@@ -103,7 +103,7 @@
             <div class="col-12">
               <div class="swiper testimonial-slider">
                 <div class="swiper-wrapper">
-                  {{ range .Params.testimonials }}
+                  {{ range first 11 .Params.testimonials }}
                     <div class="swiper-slide h-auto">
                       <div
                         class="bg-light dark:bg-darkmode-light rounded-lg overflow-hidden h-full min-h-[300px] flex flex-col">
@@ -131,6 +131,13 @@
                       </div>
                     </div>
                   {{ end }}
+                  <div class="swiper-slide h-auto">
+                    <a
+                      href="{{ (.Params.more_events_url | default "/past-events/") | relURL }}"
+                      class="bg-light dark:bg-darkmode-light rounded-lg overflow-hidden h-full min-h-[300px] flex items-center justify-center px-6 text-center text-lg font-semibold text-text-dark dark:text-darkmode-text-dark hover:text-primary dark:hover:text-darkmode-primary underline decoration-2 underline-offset-4 transition">
+                      View more events
+                    </a>
+                  </div>
                 </div>
                 <div
                   class="testimonial-slider-pagination mt-9 flex items-center justify-center text-center"></div>
