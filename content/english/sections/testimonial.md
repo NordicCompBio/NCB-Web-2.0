@@ -2,7 +2,7 @@
 enable: true
 title: "Timeline"
 description: "Previous events"
-more_events_url: "/past-events/"
+more_events_url: "./past-events/"
 
 # Testimonials
 testimonials:
