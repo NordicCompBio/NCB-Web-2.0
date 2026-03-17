@@ -51,9 +51,72 @@ One of the aims of NCB is to provide a list of useful resources for people based
 		height: auto;
 		image-rendering: auto;
 	}
+
+	.resources-page .quick-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+		margin: 0.5rem 0 1.25rem;
+	}
+
+	.resources-page .quick-links a {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.35rem 0.8rem;
+		border-radius: 9999px;
+		background: #eef5ff;
+		color: #0b3a67;
+		font-weight: 600;
+		text-decoration: none;
+		border: 1px solid #d6e7ff;
+		transition: background-color 0.2s ease, border-color 0.2s ease;
+	}
+
+	.resources-page .quick-links a:hover {
+		background: #dcecff;
+		border-color: #b7d5ff;
+	}
+
+	.dark .resources-page .quick-links a {
+		background: #243447;
+		color: #d9ebff;
+		border-color: #35506d;
+	}
+
+	.dark .resources-page .quick-links a:hover {
+		background: #2e4560;
+		border-color: #486a90;
+	}
 </style>
 
 <div class="resources-page bg-light dark:bg-darkmode-light rounded-xl p-6">
+
+### Jump to:
+
+<div class="quick-links">
+	<a href="#country-denmark">Denmark</a>
+	<a href="#country-finland">Finland</a>
+	<a href="#country-iceland">Iceland</a>
+	<a href="#country-norway">Norway</a>
+	<a href="#country-sweden">Sweden</a>
+</div>
+
+<div id="country-denmark"></div>
+
+<div class="country-heading mb-3 mt-8 flex items-center gap-3">
+	{{< image src="images/country_flags/Denmark flag.png" alt="Denmark flag" option="q100" webp="false" >}}
+	<h3 class="mb-0">Denmark</h3>
+</div>
+
+{{< accordion "University of Copenhagen" >}}
+- [MSc Bioinformatics](https://www.ku.dk/studies/masters/bioinformatics)
+{{< /accordion >}}
+
+{{< accordion "Danmarks Tekniske Universitet (DTU)" >}}
+- [MSc Bioinformatics & Systems Biology](https://www.dtu.dk/english/education/graduate/msc-programmes/bioinformatics)
+{{< /accordion >}}
+
+<div id="country-finland"></div>
 
 <div class="country-heading mb-3 flex items-center gap-3">
 	{{< image src="images/country_flags/Finland flag.png" alt="Finland flag" option="q100" webp="false" >}}
@@ -86,6 +149,19 @@ One of the aims of NCB is to provide a list of useful resources for people based
 - [MSc Epidemiology and Biomedical Data Science](https://www.oulu.fi/en/apply/masters-epidemiology-and-biomedical-data-science)
 {{< /accordion >}}
 
+<div id="country-iceland"></div>
+
+<div class="country-heading mb-3 mt-8 flex items-center gap-3">
+	{{< image src="images/country_flags/Iceland.png" alt="Iceland flag" option="q100" webp="false" >}}
+	<h3 class="mb-0">Iceland</h3>
+</div>
+
+{{< accordion "University of Iceland" >}}
+- [MSc Bioinformatics](https://english.hi.is/bioinformatics/ms)
+{{< /accordion >}}
+
+<div id="country-norway"></div>
+
 <div class="country-heading mb-3 mt-8 flex items-center gap-3">
 	{{< image src="images/country_flags/Flag_of_Norway.png" alt="Norway flag" option="q100" webp="false" >}}
 	<h3 class="mb-0">Norway</h3>
@@ -100,18 +176,7 @@ One of the aims of NCB is to provide a list of useful resources for people based
 - [MSc Computational Science (Bioinformatics)](https://www.uio.no/english/studies/programmes/computational-science-master/programme-options/bioinformatics/index.html)
 {{< /accordion >}}
 
-<div class="country-heading mb-3 mt-8 flex items-center gap-3">
-	{{< image src="images/country_flags/Denmark flag.png" alt="Denmark flag" option="q100" webp="false" >}}
-	<h3 class="mb-0">Denmark</h3>
-</div>
-
-{{< accordion "University of Copenhagen" >}}
-- [MSc Bioinformatics](https://www.ku.dk/studies/masters/bioinformatics)
-{{< /accordion >}}
-
-{{< accordion "Danmarks Tekniske Universitet (DTU)" >}}
-- [MSc Bioinformatics & Systems Biology](https://www.dtu.dk/english/education/graduate/msc-programmes/bioinformatics)
-{{< /accordion >}}
+<div id="country-sweden"></div>
 
 <div class="country-heading mb-3 mt-8 flex items-center gap-3">
 	{{< image src="images/country_flags/Sweden flag.png" alt="Sweden flag" option="q100" webp="false" >}}
@@ -151,15 +216,6 @@ One of the aims of NCB is to provide a list of useful resources for people based
 
 {{< accordion "University of Örebro" >}}
 - [MSc Experimental Medicine](https://www.oru.se/english/study/master-students/masters-programmes/masters-programme-in-experimental-medicine/)
-{{< /accordion >}}
-
-<div class="country-heading mb-3 mt-8 flex items-center gap-3">
-	{{< image src="images/country_flags/Iceland.png" alt="Iceland flag" option="q100" webp="false" >}}
-	<h3 class="mb-0">Iceland</h3>
-</div>
-
-{{< accordion "University of Iceland" >}}
-- [MSc Bioinformatics](https://english.hi.is/bioinformatics/ms)
 {{< /accordion >}}
 
 </div>
