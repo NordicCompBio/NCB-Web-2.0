@@ -30,8 +30,8 @@
   // ----------------------------------------
   const timelineSlider = document.querySelector(".timeline-slider");
   if (timelineSlider) {
-    new Swiper(timelineSlider, {
-      spaceBetween: 24,
+    const timelineSwiper = new Swiper(timelineSlider, {
+      spaceBetween: 12,
       loop: true,
       slidesPerView: "auto",
       centeredSlides: false,
@@ -39,6 +39,7 @@
       autoplay: {
         delay: 0,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       freeMode: {
         enabled: true,
@@ -47,6 +48,26 @@
       },
       allowTouchMove: true,
       loopAdditionalSlides: 4,
+    });
+
+    function pauseTimelineAutoplay() {
+      if (timelineSwiper.autoplay && timelineSwiper.autoplay.running) {
+        timelineSwiper.autoplay.pause();
+      }
+    }
+
+    function resumeTimelineAutoplay() {
+      if (timelineSwiper.autoplay && timelineSwiper.autoplay.paused) {
+        timelineSwiper.autoplay.resume();
+      }
+    }
+
+    timelineSlider.addEventListener("pointerenter", pauseTimelineAutoplay);
+    timelineSlider.addEventListener("pointerleave", resumeTimelineAutoplay);
+
+    timelineSlider.querySelectorAll(".timeline-slide").forEach(function (slide) {
+      slide.addEventListener("pointerenter", pauseTimelineAutoplay);
+      slide.addEventListener("pointerleave", resumeTimelineAutoplay);
     });
   }
 })();
