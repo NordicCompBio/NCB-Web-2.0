@@ -89,10 +89,199 @@
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}
     {{ if .Params.enable }}
-      <section class="section">
+      <section class="section timeline-section mt-[120px]">
+        <style>
+          .timeline-section .timeline-header {
+            max-width: 40rem;
+            margin: 0 auto 3.5rem;
+            text-align: center;
+          }
+
+          .timeline-section .timeline-header h2 {
+            margin-bottom: 0.75rem;
+            font-size: clamp(2rem, 4vw, 3.25rem);
+            letter-spacing: -0.03em;
+          }
+
+          .timeline-section .timeline-header p {
+            margin-bottom: 0;
+            font-size: 1.05rem;
+            line-height: 1.65;
+            color: rgba(31, 41, 55, 0.82);
+          }
+
+          .dark .timeline-section .timeline-header p {
+            color: rgba(243, 244, 246, 0.82);
+          }
+
+          .timeline-section .timeline-slider {
+            overflow: hidden;
+          }
+
+          .timeline-section .timeline-slider .swiper-wrapper {
+            transition-timing-function: linear !important;
+          }
+
+          .timeline-section .timeline-slide {
+            height: auto;
+            width: 18rem;
+          }
+
+          @media (min-width: 640px) {
+            .timeline-section .timeline-slide {
+              width: 20rem;
+            }
+          }
+
+          @media (min-width: 1024px) {
+            .timeline-section .timeline-slide {
+              width: 22rem;
+            }
+          }
+
+          .timeline-section .timeline-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 420px;
+            padding: 1.5rem 1rem;
+          }
+
+          .timeline-section .timeline-card::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 1.25rem;
+            bottom: 1.25rem;
+            width: 2px;
+            background: linear-gradient(180deg, transparent, rgba(4, 45, 80, 0.22), transparent);
+            transform: translateX(-50%);
+          }
+
+          .dark .timeline-section .timeline-card::before {
+            background: linear-gradient(180deg, transparent, rgba(209, 213, 219, 0.22), transparent);
+          }
+
+          .timeline-section .timeline-card-inner {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            transition: transform 0.35s ease;
+          }
+
+          .timeline-section .timeline-slide:hover .timeline-card-inner {
+            transform: translateY(-2px);
+          }
+
+          .timeline-section .timeline-copy {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 18.5rem;
+            text-align: center;
+          }
+
+          .timeline-section .timeline-copy p {
+            margin-bottom: 0;
+          }
+
+          .timeline-section .timeline-avatar-wrap {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 190px;
+            margin: 1rem 0;
+          }
+
+          .timeline-section .timeline-avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 9999px;
+            object-fit: cover;
+            object-position: center;
+            border: 2px solid #042d50;
+            box-shadow: 0 18px 40px rgba(4, 45, 80, 0.14);
+            background: transparent;
+          }
+
+          .timeline-section .timeline-description {
+            position: absolute;
+            left: 50%;
+            width: calc(100% - 1rem);
+            max-width: 18rem;
+            transform: translateX(-50%) translateY(0.5rem);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s ease, transform 0.25s ease;
+            z-index: 3;
+          }
+
+          .timeline-section .timeline-slide:hover .timeline-description {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+          }
+
+          .timeline-section .timeline-description--top {
+            bottom: calc(100% - 1rem);
+          }
+
+          .timeline-section .timeline-description--bottom {
+            top: calc(100% - 1rem);
+          }
+
+          .timeline-section .timeline-description-card {
+            background: rgba(255, 255, 255, 0.94);
+            border: 1px solid rgba(4, 45, 80, 0.12);
+            border-radius: 1rem;
+            box-shadow: 0 20px 50px rgba(4, 45, 80, 0.16);
+            backdrop-filter: blur(10px);
+            padding: 1rem 1.1rem;
+          }
+
+          .dark .timeline-section .timeline-description-card {
+            background: rgba(17, 24, 39, 0.92);
+            border-color: rgba(209, 213, 219, 0.16);
+          }
+
+          .timeline-section .timeline-description-card h4 {
+            margin-bottom: 0.35rem;
+            font-size: 0.95rem;
+          }
+
+          .timeline-section .timeline-description-card p {
+            margin-bottom: 0;
+            font-size: 0.9rem;
+            line-height: 1.55;
+          }
+
+          .timeline-section .timeline-meta {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin-top: 0.5rem;
+          }
+
+          .timeline-section .timeline-meta h3 {
+            margin-bottom: 0.2rem;
+          }
+
+          .timeline-section .timeline-more {
+            margin-top: 3.5rem;
+            text-align: center;
+          }
+        </style>
         <div class="container">
           <div class="row">
-            <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
+            <div class="timeline-header md:col-10 lg:col-8 xl:col-6 mx-auto">
               <h2 class="mb-4">
                 {{ .Title | markdownify }}
               </h2>
@@ -101,46 +290,53 @@
               </p>
             </div>
             <div class="col-12">
-              <div class="swiper testimonial-slider">
+              <div class="swiper timeline-slider">
                 <div class="swiper-wrapper">
-                  {{ range first 11 .Params.testimonials }}
-                    <div class="swiper-slide h-auto">
-                      <div
-                        class="bg-light dark:bg-darkmode-light rounded-lg overflow-hidden h-full min-h-[300px] flex flex-col">
-                        <div class="overflow-hidden">
-                          {{ partial "image" (dict "Src" .avatar "Size" "360x180" "Class" "w-full object-cover" "Alt" .name) }}
-                        </div>
-                        <div class="px-4 pt-3">
-                          <blockquote class="text-[11px] m-0 leading-snug">
-                            {{ .content | markdownify }}
-                          </blockquote>
-                        </div>
-                        <div class="mt-auto px-4 pb-4 pt-4 flex items-center">
-                          <div class="text-primary dark:text-darkmode-primary text-xl leading-none">
-                            <i class="fa-regular fa-font-awesome" aria-hidden="true"></i>
+                {{ range $index, $event := first 11 .Params.testimonials }}
+                  <div class="swiper-slide timeline-slide">
+                    <article class="timeline-card">
+                      <div class="timeline-card-inner">
+                        <div class="timeline-description {{ if modBool $index 2 }}timeline-description--top{{ else }}timeline-description--bottom{{ end }}">
+                          <div class="timeline-description-card">
+                            <h4 class="font-primary font-semibold leading-tight">{{ $event.name }}</h4>
+                            <p>{{ $event.content | markdownify }}</p>
                           </div>
-                          <div class="ml-2">
-                            <h3 class="text-[11px] font-primary font-semibold leading-tight">
-                              {{ .name }}
-                            </h3>
-                            <p class="text-[10px] leading-tight text-text-dark dark:text-white">
-                              {{ .designation | markdownify }}
-                            </p>
+                        </div>
+                        {{ if modBool $index 2 }}
+                          <div class="timeline-avatar-wrap">
+                            {{ partial "image" (dict "Src" $event.avatar "Class" "timeline-avatar" "Alt" $event.name) }}
                           </div>
+                          <div class="timeline-copy">
+                            <blockquote class="m-0 leading-snug text-sm">
+                              {{ $event.content | markdownify }}
+                            </blockquote>
+                          </div>
+                        {{ else }}
+                          <div class="timeline-copy">
+                            <blockquote class="m-0 leading-snug text-sm">
+                              {{ $event.content | markdownify }}
+                            </blockquote>
+                          </div>
+                          <div class="timeline-avatar-wrap">
+                            {{ partial "image" (dict "Src" $event.avatar "Class" "timeline-avatar" "Alt" $event.name) }}
+                          </div>
+                        {{ end }}
+                        <div class="timeline-meta">
+                          <h3 class="text-sm font-primary font-semibold leading-tight">{{ $event.name }}</h3>
+                          <p class="text-xs leading-tight text-text-dark dark:text-white">{{ $event.designation | markdownify }}</p>
                         </div>
                       </div>
-                    </div>
-                  {{ end }}
-                  <div class="swiper-slide h-auto">
-                    <a
-                      href="{{ (.Params.more_events_url | default "/past-events/") | relURL }}"
-                      class="bg-light dark:bg-darkmode-light rounded-lg overflow-hidden h-full min-h-[300px] flex items-center justify-center px-6 text-center text-lg font-semibold text-text-dark dark:text-darkmode-text-dark hover:text-primary dark:hover:text-darkmode-primary underline decoration-2 underline-offset-4 transition">
-                      View more events
-                    </a>
+                    </article>
                   </div>
+                {{ end }}
                 </div>
-                <div
-                  class="testimonial-slider-pagination mt-9 flex items-center justify-center text-center"></div>
+              </div>
+              <div class="timeline-more">
+                <a
+                  href="{{ (.Params.more_events_url | default "/past-events/") | relURL }}"
+                  class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-text-dark dark:text-darkmode-text-dark hover:text-primary dark:hover:text-darkmode-primary underline decoration-2 underline-offset-4 transition">
+                  View more events
+                </a>
               </div>
             </div>
           </div>

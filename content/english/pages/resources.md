@@ -91,8 +91,6 @@ One of the aims of NCB is to provide a list of useful resources for people based
 
 <div class="resources-page bg-light dark:bg-darkmode-light rounded-xl p-6">
 
-### Jump to:
-
 <div class="quick-links">
 	<a href="#country-denmark">Denmark</a>
 	<a href="#country-finland">Finland</a>

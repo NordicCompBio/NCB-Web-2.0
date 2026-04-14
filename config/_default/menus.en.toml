@@ -38,16 +38,7 @@ url = "/past-events"
 [[main]]
 weight = 5
 name = "Team"
-
-[[main]]
-parent = "Team"
-name = "Core"
-url = "/team/#core"
-
-[[main]]
-parent = "Team"
-name = "Board"
-url = "/team/#board"
+url = "/team"
 
 [[main]]
 name = "Partnerships"

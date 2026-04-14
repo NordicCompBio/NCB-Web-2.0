@@ -2,6 +2,43 @@
   {{ partial "page-header" . }}
 
   <style>
+    .team-page .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .team-page .quick-links a {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.35rem 0.8rem;
+      border-radius: 9999px;
+      background: #eef5ff;
+      color: #0b3a67;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid #d6e7ff;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .team-page .quick-links a:hover {
+      background: #dcecff;
+      border-color: #b7d5ff;
+    }
+
+    .dark .team-page .quick-links a {
+      background: #243447;
+      color: #d9ebff;
+      border-color: #35506d;
+    }
+
+    .dark .team-page .quick-links a:hover {
+      background: #2e4560;
+      border-color: #486a90;
+    }
+
     .team-member-trigger {
       text-decoration: underline;
       text-underline-offset: 3px;
@@ -12,7 +49,16 @@
     }
   </style>
 
-  <section id="core" class="section pb-0">
+  <section class="section pt-0 pb-0">
+    <div class="container team-page">
+      <div class="quick-links">
+        <a href="#core">Core</a>
+        <a href="#board">Board</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="core" class="section pt-0 pb-0">
     <div class="container">
       <div class="row">
         <div class="col-12 mb-10">

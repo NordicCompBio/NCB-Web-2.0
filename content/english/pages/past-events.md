@@ -133,7 +133,7 @@ Please send your promotional materials and event details to info@nordic-compbio.
 
 ## 2025
 
-{{% peaccordion "NCB Week 2025" %}}
+{{% peaccordion "NCB Week 2025 Finland & Estonia" %}}
 
 <div class="mb-3 mt-2 flex items-center gap-3">
 {{< imageflat src="images/country_flags/Estonia_Finland_Flag.png" caption="" alt="Flags of Finland and Estonia" height="50px" >}}
@@ -184,7 +184,7 @@ Registration is now closed.
 
 {{% /peaccordion %}}
 
-{{% peaccordion "NCB Week 2025" %}}
+{{% peaccordion "NCB Week 2025 Denmark" %}}
 
 <div class="mb-3 mt-2 flex items-center gap-3">
 {{< imageflat src="images/country_flags/Denmark flag.png" caption="" alt="Flag of Denmark" height="50px" >}}
@@ -214,10 +214,10 @@ Awards ceremony organized by NWiTA team including Nazeefa Fatima (NCB, Norway).
 
 {{% /peaccordion %}}
 
-{{% peaccordion "NCB Week 2024" %}}
+{{% peaccordion "NCB Week 2024 Finland" %}}
 
 <div class="mb-3 mt-2 flex items-center gap-3">
-{{< imageflat src="images/country_flags/Estonia_Finland_Flag.png" caption="" alt="Flags of Finland and Estonia" height="50px" >}}
+{{< imageflat src="images/country_flags/Finland flag.png" caption="" alt="Flag of Finland" height="50px" >}}
 <strong>Finland — Helsinki (7-8 Nov)</strong>
 </div>
 
@@ -250,7 +250,7 @@ Registration is now closed.
 
 {{% /peaccordion %}}
 
-{{% peaccordion "NCB Week 2024" %}}
+{{% peaccordion "NCB Week 2024 Sweden" %}}
 
 <div class="mb-3 mt-2 flex items-center gap-3">
 {{< imageflat src="images/country_flags/Sweden flag.png" caption="" alt="Flag of Sweden" height="50px" >}}

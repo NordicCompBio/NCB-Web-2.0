@@ -66,17 +66,6 @@ Please send your promotional materials and event details to info@nordic-compbio.
     margin: 0 auto;
   }
 
-  .partner-main-heading {
-    margin-top: 15px;
-    color: #e67e22;
-    font-weight: 700;
-  }
-
-  .partner-main-desc {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
   .partner-divider {
     width: 70%;
     border: 0;
@@ -91,12 +80,34 @@ Please send your promotional materials and event details to info@nordic-compbio.
 
   .partner-collab-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 30px;
     justify-items: center;
     align-items: center;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
+  }
+
+  .partner-sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 992px) {
+    .partner-sponsor-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .partner-sponsor-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   .dark .partnerships-page {
@@ -147,15 +158,19 @@ Please send your promotional materials and event details to info@nordic-compbio.
 <!-- Main sponsor section full-width -->
 <div class="partner-main">
   <div class="partner-main-inner">
-    <!-- Sponsor logo -->
-    {{< image src="images/collaborators/nordic-e-infrastructure-collaboration-neic-vector-logo.png" caption="" alt="Nordic e-Infrastructure Collaboration (NeIC)" width="300px" option="q100" webp="false" >}}
-    <!-- Main sponsor heading in different color -->
-    <h3 class="partner-main-heading">MAIN SPONSOR</h3>
-    <!-- Full name and description -->
-    <h4 style="margin: 10px 0 5px 0; font-weight: bold;">Nordic e-Infrastructure Collaboration (NeIC)</h4>
-    <p class="partner-main-desc">
-      The Nordic e-Infrastructure is a Norway based institution that fosters cross-Nordic collaboration, resource sharing, and develops electronic infrastructure in a sustainable and FAIR manner.
+    <h2 style="font-weight: bold; font-size: 32px; margin-bottom: 20px;">
+      Sponsor
+    </h2>
+    <p style="max-width: 800px; margin: 0 auto 40px auto; font-size: 16px; line-height: 1.5;">
+      Our sponsors who support us in developing and sustaining the Nordic bioinformatics community.
     </p>
+    <div class="partner-sponsor-grid">
+      {{< image src="images/collaborators/nordic-e-infrastructure-collaboration-neic-vector-logo.png" caption="" alt="Nordic e-Infrastructure Collaboration (NeIC)" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/SemetronBD_RGB.png" caption="" alt="Semetron BD" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/Olink-Logotype_Black.png" caption="" alt="Olink" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/UEF_white on black.jpg" caption="" alt="University of Eastern Finland (UEF)" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/HY__TN23_farmaL_EN_B3____BW.png" caption="" alt="University of Helsinki" width="150px" option="q100" webp="false" >}}
+    </div>
   </div>
   <br>
   <hr class="partner-divider">
@@ -172,17 +187,17 @@ Please send your promotional materials and event details to info@nordic-compbio.
     </p>
     <!-- 3x3 grid of collaborator logos -->
     <div class="partner-collab-grid">
-      {{< image src="images/collaborators/university-of-oslo-logo.png" caption="" alt="University of Oslo" width="150px" option="q100" webp="false" >}}
-      {{< image src="images/collaborators/Elixir-Europe-logo-1.png" caption="" alt="Elixir" width="150px" option="q100" webp="false" >}}
-      {{< image src="images/collaborators/jpg_NordicRSG_White.jpg" caption="" alt="ISCB Regional Student Groups Nordics" width="150px" option="q100" webp="false" >}}
-      {{< image src="images/collaborators/university-of-copenhagen-logo.png" caption="" alt="University of Copenhagen" width="150px" option="q100" webp="false" >}}
       {{< image src="images/collaborators/NBIS-logo.png" caption="" alt="National Bioinformatics Infrastructure Sweden" width="150px" option="q100" webp="false" >}}
       {{< image src="images/collaborators/scilifelab-logo.png" caption="" alt="SciLifeLab" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/Elixir-Europe-logo-1.png" caption="" alt="Elixir" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/university-of-oslo-logo.png" caption="" alt="University of Oslo" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/university-of-copenhagen-logo.png" caption="" alt="University of Copenhagen" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/collaborators/ki_logo_rgb-custom20221016133022.jpg" caption="" alt="Karolinska Institutet" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/UEF_white on black.jpg" caption="" alt="University of Eastern Finland" width="150px" option="q100" webp="false" >}}
+      {{< image src="images/institutes/HY__TN23_farmaL_EN_B3____BW.png" caption="" alt="Helsinki University" width="150px" option="q100" webp="false" >}}  
       {{< image src="images/collaborators/lubilogo.png" caption="" alt="Lund University Bioinformatics Infrastructure" width="150px" option="q100" webp="false" >}}
       {{< image src="images/collaborators/Women in Bioinformatics & data science LA.png" caption="" alt="Women in Bioinformatics and data science LA" width="150px" option="q100" webp="false" >}}
-      {{< image src="images/collaborators/ki_logo_rgb-custom20221016133022.jpg" caption="" alt="Karolinska Institutet" width="150px" option="q100" webp="false" >}}
-      {{< image src="images/institutes/UEF_white on black.jpg" caption="" alt="University of Eastern Finland" width="150px" option="q100" webp="false" >}}  
-      {{< image src="images/institutes/HY__TN23_farmaL_EN_B3____BW.png" caption="" alt="Helsinki University" width="150px" option="q100" webp="false" >}}  
+      {{< image src="images/collaborators/jpg_NordicRSG_White.jpg" caption="" alt="ISCB Regional Student Groups Nordics" width="150px" option="q100" webp="false" >}}
     </div>
   </div>
 </div>
