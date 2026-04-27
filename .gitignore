@@ -17,3 +17,4 @@ go.sum
 yarn.lock
 .code-workspace
 .idea
+pnpm-lock.yaml
